@@ -17,6 +17,13 @@
 #import "EICity.h"
 #import "EIStation.h"
 
+@interface StationsListModulePresenter ()
+
+@property (strong, nonatomic) EIStationsDisplayData *allData;
+@property (strong, nonatomic) EIStationsDisplayData *filteredData;
+
+@end
+
 @implementation StationsListModulePresenter
 
 #pragma mark - Методы StationsListModuleModuleInput
@@ -30,12 +37,47 @@
 
 - (void)didTriggerViewReadyEvent {
 	[self.view setupInitialState];
-    [self updateView];
+    [self updateViewWithFullData];
 }
 
-- (void)updateView {
+- (void)didChangeSearchBarWithSearchTerm:(NSString *)searchText {
+    
+    if (searchText.length == 0) {
+        self.filteredData = nil;
+        NSLog(@"filtered data was deleted");
+        [self.view updateTableViewWithData:self.allData];
+    } else {
+        [self updateViewWithFilteredDataWithSearchTerm:searchText];
+    }
+    
+}
+
+- (void)showDetailInfoForStationInSection:(NSInteger)section forIndex:(NSInteger)index {
+    
+    NSArray *citiesArray = [self.interactor obtainCitiesArrayWithKey:self.presenterStateStorage.citiesKey];
+    
+    EICity *city = citiesArray[section];
+    
+    EIStation *station = city.stations[index];
+    
+//    NSLog(@"%@ - %@", station.city.cityTitle, station.stationTitle);
+    
+    [self.router openDetailInfoModuleWithStation:station];
+    
+}
+
+#pragma mark - Методы StationsListModuleInteractorOutput
+
+#pragma mark - Private Methods
+
+- (void)updateViewWithFullData {
     
     self.presenterStateStorage.citiesKey = @"citiesTo";
+    
+    if (self.allData) {
+        [self.view updateTableViewWithData:self.allData];
+        return;
+    }
     
     NSArray *citiesArray = [self.interactor obtainCitiesArrayWithKey:self.presenterStateStorage.citiesKey];
     
@@ -60,29 +102,43 @@
         [sectionsArray addObject:section];
     }
     
-    EIStationsDisplayData *displayData = [EIStationsDisplayData stationDisplayDataWithSectons:sectionsArray];
+    self.allData = [EIStationsDisplayData stationDisplayDataWithSectons:sectionsArray];
     
-//    NSLog(@"%d", [displayData.sectionsArray count]);
+    //    NSLog(@"%d", [displayData.sectionsArray count]);
     
-    [self.view updateTableViewWithData:displayData];
-    
-}
-
-- (void)showDetailInfoForStationInSection:(NSInteger)section forIndex:(NSInteger)index {
-    
-    NSArray *citiesArray = [self.interactor obtainCitiesArrayWithKey:self.presenterStateStorage.citiesKey];
-    
-    EICity *city = citiesArray[section];
-    
-    EIStation *station = city.stations[index];
-    
-//    NSLog(@"%@ - %@", station.city.cityTitle, station.stationTitle);
-    
-    [self.router openDetailInfoModuleWithStation:station];
+    [self.view updateTableViewWithData:self.allData];
     
 }
 
-#pragma mark - Методы StationsListModuleInteractorOutput
-
+- (void)updateViewWithFilteredDataWithSearchTerm:(NSString *)searchText {
+    
+    NSMutableArray *filteredSections = [NSMutableArray array];
+    
+    for (EIStationsSection *section in [self.allData sectionsArray]) {
+        
+        NSMutableArray *filteredStations = [NSMutableArray array];
+        
+        for (EIStationItem *item in section.stationsArray) {
+            
+            if ([item.name localizedCaseInsensitiveContainsString:searchText] == YES) {
+                [filteredStations addObject:item];
+            }
+            
+        }
+        
+        if ([filteredStations count] > 0) {
+            [filteredSections addObject:section];
+        }
+        
+    }
+    
+    if ([filteredSections count] > 0) {
+        self.filteredData = [EIStationsDisplayData stationDisplayDataWithSectons:filteredSections];
+        [self.view updateTableViewWithData:self.filteredData];
+    } else {
+        //show no content message
+    }
+    
+}
 
 @end

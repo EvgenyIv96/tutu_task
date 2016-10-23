@@ -20,9 +20,17 @@
 /** 
  @author EI
  
- Method is used to notify presenter about tap on info station button
+ Method is used to inform presenter that user taps on info station button
  @param section index and station index
  */
 - (void)showDetailInfoForStationInSection:(NSInteger)section forIndex:(NSInteger)index;
+
+/**
+ @author Evgeny Ivanov
+ 
+ Method is used to inform presenter that user changed text in search bar
+ @param new search text
+ */
+- (void)didChangeSearchBarWithSearchTerm:(NSString *)searchText;
 
 @end

@@ -14,7 +14,7 @@
 
 @class EIStationsDisplayData;
 
-@interface StationsListModuleViewController : UIViewController <StationsListModuleViewInput>
+@interface StationsListModuleViewController : UIViewController <StationsListModuleViewInput, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating, UISearchControllerDelegate>
 
 @property (nonatomic, strong) id<StationsListModuleViewOutput> output;
 

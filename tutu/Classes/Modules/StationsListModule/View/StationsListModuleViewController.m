@@ -23,6 +23,8 @@ static NSString *const kStationCellReuseIdentifier = @"EIStationCellReuseIdentif
 @interface StationsListModuleViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) UISearchController *searchController;
+
 
 @end
 
@@ -41,6 +43,16 @@ static NSString *const kStationCellReuseIdentifier = @"EIStationCellReuseIdentif
 	// В этом методе происходит настройка параметров view, зависящих от ее жизненого цикла (создание элементов, анимации и пр.)
     
     self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    self.searchController.searchResultsUpdater = self;
+    
+    [self.searchController.searchBar sizeToFit];
+    
+    self.tableView.tableHeaderView = self.searchController.searchBar;
+    self.searchController.dimsBackgroundDuringPresentation = NO;
+    
+    [self.tableView setContentOffset:CGPointMake(0,self.searchController.searchBar.frame.size.height)];
     
 }
 
@@ -109,13 +121,29 @@ static NSString *const kStationCellReuseIdentifier = @"EIStationCellReuseIdentif
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    
+    
+}
+
+#pragma mark - UISearchResultsUpdating
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    NSLog(@"updateSearchResults");
+    
+    NSString *searchText = searchController.searchBar.text;
+    
+    NSLog(@"%@", searchText);
+    
+    [self.output didChangeSearchBarWithSearchTerm:searchText];
+    
 }
 
 #pragma mark - Actions
 
 - (void)didTapInfoButton:(UIButton *)sender {
     
-    EIStationCell *cell = [sender superUITableViewCell];
+    [self.searchController setActive:NO];
+    
+    UITableViewCell *cell = [sender superUITableViewCell];
     
     NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
     
