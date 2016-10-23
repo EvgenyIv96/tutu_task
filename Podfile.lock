@@ -1,0 +1,25 @@
+PODS:
+  - EasyMapping (0.15.5):
+    - EasyMapping/Core (= 0.15.5)
+  - EasyMapping/Core (0.15.5)
+  - RamblerTyphoonUtils/AssemblyCollector (1.5.0)
+  - Typhoon (3.5.1):
+    - Typhoon/no-arc (= 3.5.1)
+  - Typhoon/no-arc (3.5.1)
+  - ViperMcFlurry (1.5.1)
+
+DEPENDENCIES:
+  - EasyMapping (~> 0.15.0)
+  - RamblerTyphoonUtils/AssemblyCollector
+  - Typhoon
+  - ViperMcFlurry
+
+SPEC CHECKSUMS:
+  EasyMapping: 1433e72eb5224445842ba6e4ca9363dbb8503998
+  RamblerTyphoonUtils: 08a6b5592e045a490cd4550aa9ea4a581308d482
+  Typhoon: c0950bb9f2e835eb8a7dc6983160109b6baf2dda
+  ViperMcFlurry: 7bcae2f2734f9338d245fa7037fc5f983edb3da6
+
+PODFILE CHECKSUM: 90db2e24d394f188036f2845708bd8889372dd8f
+
+COCOAPODS: 1.0.1

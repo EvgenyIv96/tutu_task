@@ -7,4 +7,8 @@ target 'tutu' do
 
   # Pods for tutu
 
+pod 'EasyMapping', '~> 0.15.0'
+pod ‘ViperMcFlurry’
+pod 'Typhoon'
+pod "RamblerTyphoonUtils/AssemblyCollector"
 end
