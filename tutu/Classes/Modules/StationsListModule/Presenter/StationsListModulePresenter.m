@@ -62,9 +62,23 @@
     
     EIStationsDisplayData *displayData = [EIStationsDisplayData stationDisplayDataWithSectons:sectionsArray];
     
-    NSLog(@"%d", [displayData.sectionsArray count]);
+//    NSLog(@"%d", [displayData.sectionsArray count]);
     
     [self.view updateTableViewWithData:displayData];
+    
+}
+
+- (void)showDetailInfoForStationInSection:(NSInteger)section forIndex:(NSInteger)index {
+    
+    NSArray *citiesArray = [self.interactor obtainCitiesArrayWithKey:self.presenterStateStorage.citiesKey];
+    
+    EICity *city = citiesArray[section];
+    
+    EIStation *station = city.stations[index];
+    
+//    NSLog(@"%@ - %@", station.city.cityTitle, station.stationTitle);
+    
+    [self.router openDetailInfoModuleWithStation:station];
     
 }
 

@@ -41,6 +41,7 @@
                 </variation>
             </tableViewCellContentView>
             <connections>
+                <outlet property="infoButton" destination="cui-pt-dlU" id="HW8-mW-dKk"/>
                 <outlet property="titleLabel" destination="a22-ux-uag" id="9zB-GV-kIg"/>
             </connections>
         </tableViewCell>

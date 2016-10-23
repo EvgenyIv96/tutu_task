@@ -17,6 +17,12 @@
  */
 - (void)didTriggerViewReadyEvent;
 
-
+/** 
+ @author EI
+ 
+ Method is used to notify presenter about tap on info station button
+ @param section index and station index
+ */
+- (void)showDetailInfoForStationInSection:(NSInteger)section forIndex:(NSInteger)index;
 
 @end

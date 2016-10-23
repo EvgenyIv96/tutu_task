@@ -15,6 +15,8 @@
 #import "EIStationItem.h"
 #import "EIStationCell.h"
 
+#import "UIView+UITableViewCell.h"
+
 static NSString *const kStationCellNibName = @"EIStationCell";
 static NSString *const kStationCellReuseIdentifier = @"EIStationCellReuseIdentifier";
 
@@ -88,6 +90,7 @@ static NSString *const kStationCellReuseIdentifier = @"EIStationCellReuseIdentif
         cell = [self.tableView dequeueReusableCellWithIdentifier:kStationCellReuseIdentifier];
     }
     
+    [cell.infoButton addTarget:self action:@selector(didTapInfoButton:) forControlEvents:UIControlEventTouchUpInside];
     cell.titleLabel.text = item.name;
     
     return cell;
@@ -105,6 +108,18 @@ static NSString *const kStationCellReuseIdentifier = @"EIStationCellReuseIdentif
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+}
+
+#pragma mark - Actions
+
+- (void)didTapInfoButton:(UIButton *)sender {
+    
+    EIStationCell *cell = [sender superUITableViewCell];
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    
+    [self.output showDetailInfoForStationInSection:indexPath.section forIndex:indexPath.row];
     
 }
 

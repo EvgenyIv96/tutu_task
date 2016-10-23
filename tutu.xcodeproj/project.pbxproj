@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0212DCCACD2BFA809E66BA0F /* TripSettingModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DFBF4BAF683797B7FFA85 /* TripSettingModuleAssembly.m */; };
+		09086D8CF7184C15BA058641 /* StationDetailInfoModuleInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = FD77AFFCC89AA045260A4EE6 /* StationDetailInfoModuleInteractor.m */; };
+		29701B3CA33BCB5B427642CD /* TripSettingModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE48E0E21ABF5EE0BA8980B /* TripSettingModuleViewController.m */; };
+		2AC59C12590003FB8735AC06 /* StationDetailInfoModulePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D823FCA6855239B8F5BE03 /* StationDetailInfoModulePresenter.m */; };
+		37DC19D6F7030A05DE20C35A /* StationDetailInfoModuleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = F00E6B9A50A8AFE3592CC710 /* StationDetailInfoModuleRouter.m */; };
 		3F330CF4F8B53DE31E595D73 /* StationsListModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F71148D7D641D17D4BC4B9 /* StationsListModuleViewController.m */; };
+		4B7EB5D53844C9ABA955A6C6 /* TripSettingModuleInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC650FB0E5B6157BB921156 /* TripSettingModuleInteractor.m */; };
 		4DE1E458807754A37A453583 /* StationsListModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544179E9D522B45280ABB23 /* StationsListModuleAssembly.m */; };
 		58C51912F85E3B37A5865A98 /* StationsListModulePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E26310D8817245041CB5DDE4 /* StationsListModulePresenter.m */; };
 		5C334E931DBBE8B4000C6B8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C334E921DBBE8B4000C6B8B /* main.m */; };
@@ -31,19 +37,36 @@
 		5C334EE31DBCE68F000C6B8B /* EIObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C334EE21DBCE68F000C6B8B /* EIObjectMapper.m */; };
 		5C334EE71DBD009D000C6B8B /* EIBusinessDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C334EE61DBD009D000C6B8B /* EIBusinessDataStorage.m */; };
 		5C334EEB1DBD05FA000C6B8B /* allStations.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C334EEA1DBD05FA000C6B8B /* allStations.json */; };
+		5C334EF21DBD1DE2000C6B8B /* UIView+UITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C334EF11DBD1DE2000C6B8B /* UIView+UITableViewCell.m */; };
+		5C334EF51DBD2151000C6B8B /* DetailInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C334EF41DBD2151000C6B8B /* DetailInfo.storyboard */; };
+		5C334EF91DBD2324000C6B8B /* EIDetailInfoPresenterStateStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C334EF81DBD2324000C6B8B /* EIDetailInfoPresenterStateStorage.m */; };
+		5C334F001DBD244B000C6B8B /* EIStationDetailItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C334EFF1DBD244B000C6B8B /* EIStationDetailItem.m */; };
+		7665CA34A8EF8F2FD1B3326E /* TripSettingModulePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B7132392DF26CF6E404A8EB6 /* TripSettingModulePresenter.m */; };
+		789F0784EC5464E9E9179C45 /* StationDetailInfoModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 808614B495340FAB89093787 /* StationDetailInfoModuleAssembly.m */; };
 		9E23CAE2AE46885E22E1C532 /* StationsListModuleInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 635F56E52F7AD07B0A75F316 /* StationsListModuleInteractor.m */; };
+		B51CE88EA72C7BDC3A9B49C3 /* TripSettingModuleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F232F5206CEA8BF1E44D06 /* TripSettingModuleRouter.m */; };
 		C46D02D215C4EE1AB8CCB9A3 /* StationsListModuleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA45F713AEFEF111A45B1E8 /* StationsListModuleRouter.m */; };
 		F4ED42A80224F4AA6E44D375 /* libPods-tutu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA227E5284DBEFD9128F3CE /* libPods-tutu.a */; };
+		F84F4EB8E16C8D26A6C686D3 /* StationDetailInfoModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DF1FC462C895429342EAB3 /* StationDetailInfoModuleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04F71148D7D641D17D4BC4B9 /* StationsListModuleViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationsListModuleViewController.m; sourceTree = "<group>"; };
 		1093B58803108880FF368063 /* Pods-tutu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tutu.release.xcconfig"; path = "Pods/Target Support Files/Pods-tutu/Pods-tutu.release.xcconfig"; sourceTree = "<group>"; };
 		1949A19FF40D48CAD7E76962 /* StationsListModuleModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleModuleInput.h; sourceTree = "<group>"; };
+		20AD3D3DE2901B11A213C276 /* StationDetailInfoModuleViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationDetailInfoModuleViewOutput.h; sourceTree = "<group>"; };
+		24D823FCA6855239B8F5BE03 /* StationDetailInfoModulePresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationDetailInfoModulePresenter.m; sourceTree = "<group>"; };
+		27F232F5206CEA8BF1E44D06 /* TripSettingModuleRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TripSettingModuleRouter.m; sourceTree = "<group>"; };
 		2C09868BC8175625FE20CFF2 /* StationsListModulePresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModulePresenter.h; sourceTree = "<group>"; };
 		2D88282CB40803B96EFFB475 /* StationsListModuleRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleRouterInput.h; sourceTree = "<group>"; };
+		37F8FED4456D2CB6E53B91B3 /* StationDetailInfoModuleAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationDetailInfoModuleAssembly.h; sourceTree = "<group>"; };
+		38D1D87286A98437C94B874A /* TripSettingModuleRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleRouterInput.h; sourceTree = "<group>"; };
+		4454598FB9EFB97419BF3161 /* TripSettingModuleInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleInteractorInput.h; sourceTree = "<group>"; };
+		47DF1FC462C895429342EAB3 /* StationDetailInfoModuleViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationDetailInfoModuleViewController.m; sourceTree = "<group>"; };
+		4F9E85681806062481E29B25 /* StationDetailInfoModuleViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationDetailInfoModuleViewController.h; sourceTree = "<group>"; };
 		50103252A19F9F9A86997FEF /* Pods-tutu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tutu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tutu/Pods-tutu.debug.xcconfig"; sourceTree = "<group>"; };
 		544984500D93DA105EEF12AD /* StationsListModuleViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleViewOutput.h; sourceTree = "<group>"; };
+		5BC650FB0E5B6157BB921156 /* TripSettingModuleInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TripSettingModuleInteractor.m; sourceTree = "<group>"; };
 		5C334E8E1DBBE8B4000C6B8B /* tutu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tutu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C334E921DBBE8B4000C6B8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5C334E941DBBE8B4000C6B8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,18 +104,48 @@
 		5C334EE51DBD009D000C6B8B /* EIBusinessDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIBusinessDataStorage.h; sourceTree = "<group>"; };
 		5C334EE61DBD009D000C6B8B /* EIBusinessDataStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EIBusinessDataStorage.m; sourceTree = "<group>"; };
 		5C334EEA1DBD05FA000C6B8B /* allStations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = allStations.json; sourceTree = "<group>"; };
+		5C334EF01DBD1DE2000C6B8B /* UIView+UITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UITableViewCell.h"; sourceTree = "<group>"; };
+		5C334EF11DBD1DE2000C6B8B /* UIView+UITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UITableViewCell.m"; sourceTree = "<group>"; };
+		5C334EF41DBD2151000C6B8B /* DetailInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailInfo.storyboard; sourceTree = "<group>"; };
+		5C334EF71DBD2324000C6B8B /* EIDetailInfoPresenterStateStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIDetailInfoPresenterStateStorage.h; sourceTree = "<group>"; };
+		5C334EF81DBD2324000C6B8B /* EIDetailInfoPresenterStateStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EIDetailInfoPresenterStateStorage.m; sourceTree = "<group>"; };
+		5C334EFE1DBD244B000C6B8B /* EIStationDetailItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIStationDetailItem.h; sourceTree = "<group>"; };
+		5C334EFF1DBD244B000C6B8B /* EIStationDetailItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EIStationDetailItem.m; sourceTree = "<group>"; };
 		5E9CE7DEB112E5674D61E565 /* StationsListModuleInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleInteractorOutput.h; sourceTree = "<group>"; };
+		60730E3BD51FD143AEF27615 /* TripSettingModuleViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleViewOutput.h; sourceTree = "<group>"; };
 		635F56E52F7AD07B0A75F316 /* StationsListModuleInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationsListModuleInteractor.m; sourceTree = "<group>"; };
 		66A251214C6135D3A2119C50 /* StationsListModuleInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleInteractorInput.h; sourceTree = "<group>"; };
 		68D8263EAA43CA49927C2348 /* StationsListModuleInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleInteractor.h; sourceTree = "<group>"; };
+		6B383707B3022AE624B1DBD9 /* StationDetailInfoModulePresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationDetailInfoModulePresenter.h; sourceTree = "<group>"; };
+		6B67CBC8F8E930E2066D620A /* TripSettingModuleInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleInteractor.h; sourceTree = "<group>"; };
 		6DA45F713AEFEF111A45B1E8 /* StationsListModuleRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationsListModuleRouter.m; sourceTree = "<group>"; };
 		75B5CC04B721FE5D324D70B4 /* StationsListModuleViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleViewInput.h; sourceTree = "<group>"; };
+		7B51CD110770EF00AD3A37CC /* StationDetailInfoModuleRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationDetailInfoModuleRouterInput.h; sourceTree = "<group>"; };
 		7BA227E5284DBEFD9128F3CE /* libPods-tutu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tutu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E8AF3D7FFA35B0D8711B6FB /* TripSettingModulePresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModulePresenter.h; sourceTree = "<group>"; };
+		808614B495340FAB89093787 /* StationDetailInfoModuleAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationDetailInfoModuleAssembly.m; sourceTree = "<group>"; };
 		8544179E9D522B45280ABB23 /* StationsListModuleAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationsListModuleAssembly.m; sourceTree = "<group>"; };
+		87837E2ED11458261B7D4D72 /* TripSettingModuleViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleViewInput.h; sourceTree = "<group>"; };
+		8A004BFE5E1DC080502151B9 /* StationDetailInfoModuleInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationDetailInfoModuleInteractorInput.h; sourceTree = "<group>"; };
+		8C6D8E76D8E59F68F170A75E /* StationDetailInfoModuleViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationDetailInfoModuleViewInput.h; sourceTree = "<group>"; };
+		8E6DFBF4BAF683797B7FFA85 /* TripSettingModuleAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TripSettingModuleAssembly.m; sourceTree = "<group>"; };
+		96C3BBA1F8EFFDC94C3275FD /* StationDetailInfoModuleRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationDetailInfoModuleRouter.h; sourceTree = "<group>"; };
+		996C53835E3C6125E35318CD /* StationDetailInfoModuleModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationDetailInfoModuleModuleInput.h; sourceTree = "<group>"; };
+		A058BFD585B2B1F8B5CB27D1 /* TripSettingModuleAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleAssembly.h; sourceTree = "<group>"; };
+		A30527114C547E25B54DA863 /* StationDetailInfoModuleInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationDetailInfoModuleInteractor.h; sourceTree = "<group>"; };
 		A8AB19CF2B9F8A13032D66E5 /* StationsListModuleViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleViewController.h; sourceTree = "<group>"; };
+		B3C5F56463A9F3E8838A410B /* StationDetailInfoModuleInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationDetailInfoModuleInteractorOutput.h; sourceTree = "<group>"; };
 		B49AC83AA12726A9C72644D1 /* StationsListModuleRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleRouter.h; sourceTree = "<group>"; };
+		B7132392DF26CF6E404A8EB6 /* TripSettingModulePresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TripSettingModulePresenter.m; sourceTree = "<group>"; };
 		C4DAC4E36051A794DF5B50F9 /* StationsListModuleAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleAssembly.h; sourceTree = "<group>"; };
+		D3A2F5A33F9C350DB4E7E8B5 /* TripSettingModuleModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleModuleInput.h; sourceTree = "<group>"; };
+		D6CA64114F426A3ADC118ABE /* TripSettingModuleInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleInteractorOutput.h; sourceTree = "<group>"; };
+		DDE48E0E21ABF5EE0BA8980B /* TripSettingModuleViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TripSettingModuleViewController.m; sourceTree = "<group>"; };
 		E26310D8817245041CB5DDE4 /* StationsListModulePresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationsListModulePresenter.m; sourceTree = "<group>"; };
+		E9A037812C51CF8F19DD1A7B /* TripSettingModuleViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleViewController.h; sourceTree = "<group>"; };
+		EDE88492D7732A760FDA6FED /* TripSettingModuleRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleRouter.h; sourceTree = "<group>"; };
+		F00E6B9A50A8AFE3592CC710 /* StationDetailInfoModuleRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationDetailInfoModuleRouter.m; sourceTree = "<group>"; };
+		FD77AFFCC89AA045260A4EE6 /* StationDetailInfoModuleInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationDetailInfoModuleInteractor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +160,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0733564931B1AD0DA4E18E78 /* StationDetailInfoModule */ = {
+			isa = PBXGroup;
+			children = (
+				5C334EF31DBD212D000C6B8B /* Storyboard */,
+				5D1A5C90C4CF14BF789FC532 /* Assembly */,
+				76368D65F097A6DC0E9BA804 /* View */,
+				79A80C60A7196CA5A3CBE438 /* Presenter */,
+				716FC46C6D367FE13E4E6CF0 /* Interactor */,
+				CFFEE4CBE8437699399DC0C1 /* Router */,
+			);
+			path = StationDetailInfoModule;
+			sourceTree = "<group>";
+		};
 		0837487A6731791FAD60B32A /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +187,16 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		17E665E8FF70C12C3D6F9CD5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				38D1D87286A98437C94B874A /* TripSettingModuleRouterInput.h */,
+				EDE88492D7732A760FDA6FED /* TripSettingModuleRouter.h */,
+				27F232F5206CEA8BF1E44D06 /* TripSettingModuleRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		3200496638ADEABB1AEDB6D2 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,12 +209,32 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		3C80F4F2888FE1FADF510228 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87837E2ED11458261B7D4D72 /* TripSettingModuleViewInput.h */,
+				60730E3BD51FD143AEF27615 /* TripSettingModuleViewOutput.h */,
+				E9A037812C51CF8F19DD1A7B /* TripSettingModuleViewController.h */,
+				DDE48E0E21ABF5EE0BA8980B /* TripSettingModuleViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		48C6698843BC9D0DFB0C232A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				7B860D56470F4CC9EE1936EF /* Modules */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		4B2BC30BEFB39AB23F803CA4 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				A058BFD585B2B1F8B5CB27D1 /* TripSettingModuleAssembly.h */,
+				8E6DFBF4BAF683797B7FFA85 /* TripSettingModuleAssembly.m */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		4C6333D88769E3414ED9F178 /* StationsListModule */ = {
@@ -161,6 +257,18 @@
 				1093B58803108880FF368063 /* Pods-tutu.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		5470A44CCD8DCDBA56E39D76 /* TripSettingModule */ = {
+			isa = PBXGroup;
+			children = (
+				4B2BC30BEFB39AB23F803CA4 /* Assembly */,
+				3C80F4F2888FE1FADF510228 /* View */,
+				DC5A004244F069C4943872D8 /* Presenter */,
+				8DF3DCB0DB17E171676014EC /* Interactor */,
+				17E665E8FF70C12C3D6F9CD5 /* Router */,
+			);
+			path = TripSettingModule;
 			sourceTree = "<group>";
 		};
 		5C334E851DBBE8B4000C6B8B = {
@@ -210,6 +318,7 @@
 		5C334EA81DBBEC2D000C6B8B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5C334EEC1DBD1C1C000C6B8B /* Categories */,
 				5C334EA91DBBEC2D000C6B8B /* TabBarController */,
 			);
 			path = Common;
@@ -330,6 +439,50 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		5C334EEC1DBD1C1C000C6B8B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5C334EF01DBD1DE2000C6B8B /* UIView+UITableViewCell.h */,
+				5C334EF11DBD1DE2000C6B8B /* UIView+UITableViewCell.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		5C334EF31DBD212D000C6B8B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5C334EF41DBD2151000C6B8B /* DetailInfo.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5C334EF61DBD230D000C6B8B /* PresenterStateStorage */ = {
+			isa = PBXGroup;
+			children = (
+				5C334EF71DBD2324000C6B8B /* EIDetailInfoPresenterStateStorage.h */,
+				5C334EF81DBD2324000C6B8B /* EIDetailInfoPresenterStateStorage.m */,
+			);
+			path = PresenterStateStorage;
+			sourceTree = "<group>";
+		};
+		5C334EFA1DBD23F3000C6B8B /* DisplayData */ = {
+			isa = PBXGroup;
+			children = (
+				5C334EFE1DBD244B000C6B8B /* EIStationDetailItem.h */,
+				5C334EFF1DBD244B000C6B8B /* EIStationDetailItem.m */,
+			);
+			path = DisplayData;
+			sourceTree = "<group>";
+		};
+		5D1A5C90C4CF14BF789FC532 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				37F8FED4456D2CB6E53B91B3 /* StationDetailInfoModuleAssembly.h */,
+				808614B495340FAB89093787 /* StationDetailInfoModuleAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		6052FB6DE85EC258FF31E62C /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,12 +493,59 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		716FC46C6D367FE13E4E6CF0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8A004BFE5E1DC080502151B9 /* StationDetailInfoModuleInteractorInput.h */,
+				B3C5F56463A9F3E8838A410B /* StationDetailInfoModuleInteractorOutput.h */,
+				A30527114C547E25B54DA863 /* StationDetailInfoModuleInteractor.h */,
+				FD77AFFCC89AA045260A4EE6 /* StationDetailInfoModuleInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		76368D65F097A6DC0E9BA804 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C6D8E76D8E59F68F170A75E /* StationDetailInfoModuleViewInput.h */,
+				20AD3D3DE2901B11A213C276 /* StationDetailInfoModuleViewOutput.h */,
+				4F9E85681806062481E29B25 /* StationDetailInfoModuleViewController.h */,
+				47DF1FC462C895429342EAB3 /* StationDetailInfoModuleViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79A80C60A7196CA5A3CBE438 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5C334EFA1DBD23F3000C6B8B /* DisplayData */,
+				5C334EF61DBD230D000C6B8B /* PresenterStateStorage */,
+				996C53835E3C6125E35318CD /* StationDetailInfoModuleModuleInput.h */,
+				6B383707B3022AE624B1DBD9 /* StationDetailInfoModulePresenter.h */,
+				24D823FCA6855239B8F5BE03 /* StationDetailInfoModulePresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		7B860D56470F4CC9EE1936EF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				4C6333D88769E3414ED9F178 /* StationsListModule */,
+				5470A44CCD8DCDBA56E39D76 /* TripSettingModule */,
+				0733564931B1AD0DA4E18E78 /* StationDetailInfoModule */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		8DF3DCB0DB17E171676014EC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4454598FB9EFB97419BF3161 /* TripSettingModuleInteractorInput.h */,
+				D6CA64114F426A3ADC118ABE /* TripSettingModuleInteractorOutput.h */,
+				6B67CBC8F8E930E2066D620A /* TripSettingModuleInteractor.h */,
+				5BC650FB0E5B6157BB921156 /* TripSettingModuleInteractor.m */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		90F774DDFF7A2C94D5812758 /* Frameworks */ = {
@@ -375,6 +575,26 @@
 				04F71148D7D641D17D4BC4B9 /* StationsListModuleViewController.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CFFEE4CBE8437699399DC0C1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7B51CD110770EF00AD3A37CC /* StationDetailInfoModuleRouterInput.h */,
+				96C3BBA1F8EFFDC94C3275FD /* StationDetailInfoModuleRouter.h */,
+				F00E6B9A50A8AFE3592CC710 /* StationDetailInfoModuleRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		DC5A004244F069C4943872D8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D3A2F5A33F9C350DB4E7E8B5 /* TripSettingModuleModuleInput.h */,
+				7E8AF3D7FFA35B0D8711B6FB /* TripSettingModulePresenter.h */,
+				B7132392DF26CF6E404A8EB6 /* TripSettingModulePresenter.m */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,6 +657,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C334EF51DBD2151000C6B8B /* DetailInfo.storyboard in Resources */,
 				5C334EEB1DBD05FA000C6B8B /* allStations.json in Resources */,
 				5C334EC21DBBFC79000C6B8B /* Stations.storyboard in Resources */,
 				5C334EA11DBBE8B4000C6B8B /* LaunchScreen.storyboard in Resources */,
@@ -502,15 +723,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C334E961DBBE8B4000C6B8B /* AppDelegate.m in Sources */,
+				5C334EF91DBD2324000C6B8B /* EIDetailInfoPresenterStateStorage.m in Sources */,
 				5C334EE31DBCE68F000C6B8B /* EIObjectMapper.m in Sources */,
 				5C334E931DBBE8B4000C6B8B /* main.m in Sources */,
 				5C334ED31DBCE34C000C6B8B /* EIStationListDataManager.m in Sources */,
 				5C334ED01DBCDE7D000C6B8B /* EIStationsListPresenterStateStorage.m in Sources */,
 				5C334EB21DBBED72000C6B8B /* EIStationCell.m in Sources */,
 				5C334EDD1DBCE593000C6B8B /* EICity.m in Sources */,
+				5C334F001DBD244B000C6B8B /* EIStationDetailItem.m in Sources */,
 				5C334ED71DBCE535000C6B8B /* EIStation.m in Sources */,
 				4DE1E458807754A37A453583 /* StationsListModuleAssembly.m in Sources */,
 				5C334EBA1DBBF653000C6B8B /* EIStationsSection.m in Sources */,
+				5C334EF21DBD1DE2000C6B8B /* UIView+UITableViewCell.m in Sources */,
 				5C334EE01DBCE5B8000C6B8B /* EIPoint.m in Sources */,
 				5C334EE71DBD009D000C6B8B /* EIBusinessDataStorage.m in Sources */,
 				5C334EBD1DBBF802000C6B8B /* EIStationItem.m in Sources */,
@@ -521,6 +745,16 @@
 				C46D02D215C4EE1AB8CCB9A3 /* StationsListModuleRouter.m in Sources */,
 				5C334EDA1DBCE552000C6B8B /* EIBaseModel.m in Sources */,
 				5C334EB71DBBF510000C6B8B /* EIStationsDisplayData.m in Sources */,
+				0212DCCACD2BFA809E66BA0F /* TripSettingModuleAssembly.m in Sources */,
+				29701B3CA33BCB5B427642CD /* TripSettingModuleViewController.m in Sources */,
+				7665CA34A8EF8F2FD1B3326E /* TripSettingModulePresenter.m in Sources */,
+				4B7EB5D53844C9ABA955A6C6 /* TripSettingModuleInteractor.m in Sources */,
+				B51CE88EA72C7BDC3A9B49C3 /* TripSettingModuleRouter.m in Sources */,
+				789F0784EC5464E9E9179C45 /* StationDetailInfoModuleAssembly.m in Sources */,
+				F84F4EB8E16C8D26A6C686D3 /* StationDetailInfoModuleViewController.m in Sources */,
+				2AC59C12590003FB8735AC06 /* StationDetailInfoModulePresenter.m in Sources */,
+				09086D8CF7184C15BA058641 /* StationDetailInfoModuleInteractor.m in Sources */,
+				37DC19D6F7030A05DE20C35A /* StationDetailInfoModuleRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

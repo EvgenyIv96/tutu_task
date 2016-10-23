@@ -12,13 +12,12 @@
 
 @protocol StationsListModuleRouterInput <NSObject>
 
-/**
+/** 
  @author Evgeny Ivanov
- 
- Method is used to open StationsListModule and configure with selected station from cities array for cities key
- 
- @param EIStation Station Object, NSString cities key
+
+ Method is used to initiate transition to the StationDetailInfoModule
+ @param station EIStation station object
  */
-- (void)openEventModuleWithSelectedStation:(EIStation *)selectedStation forCitiesKey:(NSString *)citiesKey;
+- (void)openDetailInfoModuleWithStation:(EIStation *)station;
 
 @end

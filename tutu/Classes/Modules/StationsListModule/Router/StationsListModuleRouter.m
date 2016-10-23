@@ -10,12 +10,21 @@
 
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
+#import "StationDetailInfoModuleModuleInput.h"
+
+static NSString *const kStationListModuleToStationDetailInfoModuleSegue = @"kStationListModuleToStationDetailInfoModuleSegue";
+
 @implementation StationsListModuleRouter
 
 #pragma mark - Методы StationsListModuleRouterInput
 
-- (void)openEventModuleWithSelectedStation:(EIStation *)selectedStation forCitiesKey:(NSString *)citiesKey {
-    self.transitionHandler;
+- (void)openDetailInfoModuleWithStation:(EIStation *)station {
+    
+    [[self.transitionHandler openModuleUsingSegue:kStationListModuleToStationDetailInfoModuleSegue] thenChainUsingBlock:^id<RamblerViperModuleOutput>(id<StationDetailInfoModuleModuleInput> moduleInput) {
+        [moduleInput configureModuleWithStation:station];
+        return nil;
+    }];
+    
 }
 
 @end
