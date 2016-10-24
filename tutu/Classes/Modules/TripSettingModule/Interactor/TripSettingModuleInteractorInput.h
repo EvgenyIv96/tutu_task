@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class EITrip;
+
 @protocol TripSettingModuleInteractorInput <NSObject>
 
 @end

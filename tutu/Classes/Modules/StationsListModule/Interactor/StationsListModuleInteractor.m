@@ -11,9 +11,14 @@
 #import "StationsListModuleInteractorOutput.h"
 #import "EIStationListDataManager.h"
 #import "EIObjectMapper.h"
-#import "EIBusinessDataStorage.h"
 
 static NSString *const kFileName = @"allStations";
+
+@interface StationsListModuleInteractor ()
+
+@property (strong, nonatomic) NSArray *citiesArray;
+
+@end
 
 @implementation StationsListModuleInteractor
 
@@ -21,26 +26,24 @@ static NSString *const kFileName = @"allStations";
 
 - (NSArray *)obtainCitiesArrayWithKey:(NSString *)key {
     
-    if (!self.data) {
-        [self createDataStorageWithCitiesForKey:key];
+    if (!self.citiesArray) {
+        self.citiesArray = [NSArray arrayWithArray:[self citiesFromJSONWithCitiesForKey:key]];
     }
     
-    return self.data.cities;
+    return self.citiesArray;
     
 }
-
 
 
 #pragma mark - Методы StationsListModuleInteractorOutput
 
 #pragma mark - Private Methods
 
-- (void)createDataStorageWithCitiesForKey:(NSString *)key {
-    
-    self.data = [[EIBusinessDataStorage alloc] init];
+- (NSArray *)citiesFromJSONWithCitiesForKey:(NSString *)key {
     
     NSArray *dictArray = [self.dataManager dictionaryArrayForKey:key fromFile:kFileName];
-    self.data.cities = [self.objectMapper citiesArrayFromDictArray:dictArray];
+    
+    return [self.objectMapper citiesArrayFromDictArray:dictArray];
     
 }
 

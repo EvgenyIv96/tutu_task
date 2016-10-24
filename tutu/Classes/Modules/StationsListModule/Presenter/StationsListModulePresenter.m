@@ -17,7 +17,11 @@
 #import "EICity.h"
 #import "EIStation.h"
 
+static NSString *const kSectionsNameArray = @"kSectionsNameArray";
+
 @interface StationsListModulePresenter ()
+
+@property (strong, nonatomic) NSArray *sectionNamesArray;
 
 @property (strong, nonatomic) EIStationsDisplayData *allData;
 @property (strong, nonatomic) EIStationsDisplayData *filteredData;
@@ -60,10 +64,35 @@
     
     EIStation *station = city.stations[index];
     
-//    NSLog(@"%@ - %@", station.city.cityTitle, station.stationTitle);
-    
     [self.router openDetailInfoModuleWithStation:station];
     
+}
+
+- (void)didChangeSelectedStationToStation:(EIStationItem *)station inSection:(EIStationsSection *)section; {
+    
+    NSInteger cityIndex = NSNotFound;
+    NSInteger stationIndex = NSNotFound;
+    
+    cityIndex = [self.sectionNamesArray indexOfObject:section.name];
+    
+    NSArray *citiesArray = [self.interactor obtainCitiesArrayWithKey:self.presenterStateStorage.citiesKey];
+    
+    EIStationsSection *stationSection = [self.allData.sectionsArray objectAtIndex:cityIndex];
+    
+    stationIndex = [stationSection.stationsArray indexOfObject:station];
+    
+    EICity *city = citiesArray[cityIndex];
+    
+    self.presenterStateStorage.selectedStation = city.stations[stationIndex];
+    
+    [self.moduleOutput didChangeSelectedStationTo:self.presenterStateStorage.selectedStation];
+    
+    [self.view closeStationListModule];
+    
+}
+
+- (void)didTapCloseButton {
+    [self.view closeStationListModule];
 }
 
 #pragma mark - Методы StationsListModuleInteractorOutput
@@ -81,6 +110,8 @@
     
     NSArray *citiesArray = [self.interactor obtainCitiesArrayWithKey:self.presenterStateStorage.citiesKey];
     
+    NSMutableArray *sectionNamesArray = [NSMutableArray array];
+    
     NSMutableArray *sectionsArray = [NSMutableArray array];
     
     for (EICity *city in citiesArray) {
@@ -97,10 +128,14 @@
         
         NSString *sectionName = [NSString stringWithFormat:@"%@, %@", city.countryTitle, city.cityTitle];
         
+        [sectionNamesArray addObject:sectionName];
+        
         EIStationsSection *section = [EIStationsSection stationsSectionWithName:sectionName andStations:items];
         
         [sectionsArray addObject:section];
     }
+    
+    self.sectionNamesArray = sectionNamesArray;
     
     self.allData = [EIStationsDisplayData stationDisplayDataWithSectons:sectionsArray];
     
@@ -131,14 +166,8 @@
         }
         
     }
-    
-    if ([filteredSections count] > 0) {
-        self.filteredData = [EIStationsDisplayData stationDisplayDataWithSectons:filteredSections];
-        [self.view updateTableViewWithData:self.filteredData];
-    } else {
-        //show no content message
-    }
-    
+    self.filteredData = [EIStationsDisplayData stationDisplayDataWithSectons:filteredSections];
+    [self.view updateTableViewWithData:self.filteredData];
 }
 
 @end

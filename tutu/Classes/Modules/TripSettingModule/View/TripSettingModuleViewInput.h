@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class EITripItem;
+
 @protocol TripSettingModuleViewInput <NSObject>
 
 /**
@@ -16,5 +18,14 @@
  Метод настраивает начальный стейт view
  */
 - (void)setupInitialState;
+
+/**
+ @author Evgeny Ivanov
+ 
+ Method is used to configure view
+ 
+ @param trip EITrip trip object
+ */
+- (void)configureViewWithTripItem:(EITripItem *)trip;
 
 @end

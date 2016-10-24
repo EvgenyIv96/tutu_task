@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+@class EIStationItem;
+@class EIStationsSection;
+
 @protocol StationsListModuleViewOutput <NSObject>
 
 /**
@@ -20,7 +23,7 @@
 /** 
  @author EI
  
- Method is used to inform presenter that user taps on info station button
+ Method is used to inform presenter that user taped on info station button
  @param section index and station index
  */
 - (void)showDetailInfoForStationInSection:(NSInteger)section forIndex:(NSInteger)index;
@@ -29,8 +32,24 @@
  @author Evgeny Ivanov
  
  Method is used to inform presenter that user changed text in search bar
- @param new search text
+ @param searchText NSString new search text
  */
 - (void)didChangeSearchBarWithSearchTerm:(NSString *)searchText;
+
+
+/**
+ @author Evgeny Ivanov
+ 
+ Method is used to inform presenter that user selected another station
+ @param station EIStationItem station display object, section EIStationsSection section display object
+ */
+- (void)didChangeSelectedStationToStation:(EIStationItem *)station inSection:(EIStationsSection *)section;
+
+/**
+ @author Evgeny Ivanov
+ 
+ Method is used to inform present that user taped close button
+ */
+- (void)didTapCloseButton;
 
 @end

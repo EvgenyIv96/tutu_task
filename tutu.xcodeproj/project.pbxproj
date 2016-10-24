@@ -35,12 +35,14 @@
 		5C334EDD1DBCE593000C6B8B /* EICity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C334EDC1DBCE593000C6B8B /* EICity.m */; };
 		5C334EE01DBCE5B8000C6B8B /* EIPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C334EDF1DBCE5B8000C6B8B /* EIPoint.m */; };
 		5C334EE31DBCE68F000C6B8B /* EIObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C334EE21DBCE68F000C6B8B /* EIObjectMapper.m */; };
-		5C334EE71DBD009D000C6B8B /* EIBusinessDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C334EE61DBD009D000C6B8B /* EIBusinessDataStorage.m */; };
 		5C334EEB1DBD05FA000C6B8B /* allStations.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C334EEA1DBD05FA000C6B8B /* allStations.json */; };
 		5C334EF21DBD1DE2000C6B8B /* UIView+UITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C334EF11DBD1DE2000C6B8B /* UIView+UITableViewCell.m */; };
 		5C334EF51DBD2151000C6B8B /* DetailInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C334EF41DBD2151000C6B8B /* DetailInfo.storyboard */; };
 		5C334EF91DBD2324000C6B8B /* EIDetailInfoPresenterStateStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C334EF81DBD2324000C6B8B /* EIDetailInfoPresenterStateStorage.m */; };
 		5C334F001DBD244B000C6B8B /* EIStationDetailItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C334EFF1DBD244B000C6B8B /* EIStationDetailItem.m */; };
+		5C334F031DBD5057000C6B8B /* TripSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C334F021DBD5057000C6B8B /* TripSettings.storyboard */; };
+		5C714B011DBEA10A00C85060 /* TripSettingPresenterStateStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C714B001DBEA10A00C85060 /* TripSettingPresenterStateStorage.m */; };
+		5C9CF5711DBE62DC006799D6 /* EITripItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9CF5701DBE62DC006799D6 /* EITripItem.m */; };
 		7665CA34A8EF8F2FD1B3326E /* TripSettingModulePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B7132392DF26CF6E404A8EB6 /* TripSettingModulePresenter.m */; };
 		789F0784EC5464E9E9179C45 /* StationDetailInfoModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 808614B495340FAB89093787 /* StationDetailInfoModuleAssembly.m */; };
 		9E23CAE2AE46885E22E1C532 /* StationsListModuleInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 635F56E52F7AD07B0A75F316 /* StationsListModuleInteractor.m */; };
@@ -101,8 +103,6 @@
 		5C334EDF1DBCE5B8000C6B8B /* EIPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EIPoint.m; sourceTree = "<group>"; };
 		5C334EE11DBCE68F000C6B8B /* EIObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIObjectMapper.h; sourceTree = "<group>"; };
 		5C334EE21DBCE68F000C6B8B /* EIObjectMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EIObjectMapper.m; sourceTree = "<group>"; };
-		5C334EE51DBD009D000C6B8B /* EIBusinessDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIBusinessDataStorage.h; sourceTree = "<group>"; };
-		5C334EE61DBD009D000C6B8B /* EIBusinessDataStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EIBusinessDataStorage.m; sourceTree = "<group>"; };
 		5C334EEA1DBD05FA000C6B8B /* allStations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = allStations.json; sourceTree = "<group>"; };
 		5C334EF01DBD1DE2000C6B8B /* UIView+UITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UITableViewCell.h"; sourceTree = "<group>"; };
 		5C334EF11DBD1DE2000C6B8B /* UIView+UITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UITableViewCell.m"; sourceTree = "<group>"; };
@@ -111,6 +111,12 @@
 		5C334EF81DBD2324000C6B8B /* EIDetailInfoPresenterStateStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EIDetailInfoPresenterStateStorage.m; sourceTree = "<group>"; };
 		5C334EFE1DBD244B000C6B8B /* EIStationDetailItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIStationDetailItem.h; sourceTree = "<group>"; };
 		5C334EFF1DBD244B000C6B8B /* EIStationDetailItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EIStationDetailItem.m; sourceTree = "<group>"; };
+		5C334F021DBD5057000C6B8B /* TripSettings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripSettings.storyboard; sourceTree = "<group>"; };
+		5C714AFD1DBE98A400C85060 /* StationsListModuleModuleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationsListModuleModuleOutput.h; sourceTree = "<group>"; };
+		5C714AFF1DBEA10A00C85060 /* TripSettingPresenterStateStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripSettingPresenterStateStorage.h; sourceTree = "<group>"; };
+		5C714B001DBEA10A00C85060 /* TripSettingPresenterStateStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripSettingPresenterStateStorage.m; sourceTree = "<group>"; };
+		5C9CF56F1DBE62DC006799D6 /* EITripItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EITripItem.h; sourceTree = "<group>"; };
+		5C9CF5701DBE62DC006799D6 /* EITripItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EITripItem.m; sourceTree = "<group>"; };
 		5E9CE7DEB112E5674D61E565 /* StationsListModuleInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleInteractorOutput.h; sourceTree = "<group>"; };
 		60730E3BD51FD143AEF27615 /* TripSettingModuleViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleViewOutput.h; sourceTree = "<group>"; };
 		635F56E52F7AD07B0A75F316 /* StationsListModuleInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationsListModuleInteractor.m; sourceTree = "<group>"; };
@@ -176,7 +182,6 @@
 		0837487A6731791FAD60B32A /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				5C334EE41DBD0085000C6B8B /* BusinessDataStorage */,
 				5C334EBF1DBBFC13000C6B8B /* DataManager */,
 				5C334EBE1DBBFC0E000C6B8B /* Mapper */,
 				66A251214C6135D3A2119C50 /* StationsListModuleInteractorInput.h */,
@@ -205,6 +210,7 @@
 				1949A19FF40D48CAD7E76962 /* StationsListModuleModuleInput.h */,
 				2C09868BC8175625FE20CFF2 /* StationsListModulePresenter.h */,
 				E26310D8817245041CB5DDE4 /* StationsListModulePresenter.m */,
+				5C714AFD1DBE98A400C85060 /* StationsListModuleModuleOutput.h */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -262,6 +268,7 @@
 		5470A44CCD8DCDBA56E39D76 /* TripSettingModule */ = {
 			isa = PBXGroup;
 			children = (
+				5C334F011DBD504D000C6B8B /* Storyboard */,
 				4B2BC30BEFB39AB23F803CA4 /* Assembly */,
 				3C80F4F2888FE1FADF510228 /* View */,
 				DC5A004244F069C4943872D8 /* Presenter */,
@@ -414,15 +421,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		5C334EE41DBD0085000C6B8B /* BusinessDataStorage */ = {
-			isa = PBXGroup;
-			children = (
-				5C334EE51DBD009D000C6B8B /* EIBusinessDataStorage.h */,
-				5C334EE61DBD009D000C6B8B /* EIBusinessDataStorage.m */,
-			);
-			path = BusinessDataStorage;
-			sourceTree = "<group>";
-		};
 		5C334EE81DBD05F9000C6B8B /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,6 +468,32 @@
 			children = (
 				5C334EFE1DBD244B000C6B8B /* EIStationDetailItem.h */,
 				5C334EFF1DBD244B000C6B8B /* EIStationDetailItem.m */,
+			);
+			path = DisplayData;
+			sourceTree = "<group>";
+		};
+		5C334F011DBD504D000C6B8B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5C334F021DBD5057000C6B8B /* TripSettings.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5C714AFE1DBEA0EE00C85060 /* PresenterStateStorage */ = {
+			isa = PBXGroup;
+			children = (
+				5C714AFF1DBEA10A00C85060 /* TripSettingPresenterStateStorage.h */,
+				5C714B001DBEA10A00C85060 /* TripSettingPresenterStateStorage.m */,
+			);
+			path = PresenterStateStorage;
+			sourceTree = "<group>";
+		};
+		5C9CF56E1DBE62BF006799D6 /* DisplayData */ = {
+			isa = PBXGroup;
+			children = (
+				5C9CF56F1DBE62DC006799D6 /* EITripItem.h */,
+				5C9CF5701DBE62DC006799D6 /* EITripItem.m */,
 			);
 			path = DisplayData;
 			sourceTree = "<group>";
@@ -590,6 +614,8 @@
 		DC5A004244F069C4943872D8 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				5C714AFE1DBEA0EE00C85060 /* PresenterStateStorage */,
+				5C9CF56E1DBE62BF006799D6 /* DisplayData */,
 				D3A2F5A33F9C350DB4E7E8B5 /* TripSettingModuleModuleInput.h */,
 				7E8AF3D7FFA35B0D8711B6FB /* TripSettingModulePresenter.h */,
 				B7132392DF26CF6E404A8EB6 /* TripSettingModulePresenter.m */,
@@ -663,6 +689,7 @@
 				5C334EA11DBBE8B4000C6B8B /* LaunchScreen.storyboard in Resources */,
 				5C334E9E1DBBE8B4000C6B8B /* Assets.xcassets in Resources */,
 				5C334EB31DBBED72000C6B8B /* EIStationCell.xib in Resources */,
+				5C334F031DBD5057000C6B8B /* TripSettings.storyboard in Resources */,
 				5C334E9C1DBBE8B4000C6B8B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -736,7 +763,6 @@
 				5C334EBA1DBBF653000C6B8B /* EIStationsSection.m in Sources */,
 				5C334EF21DBD1DE2000C6B8B /* UIView+UITableViewCell.m in Sources */,
 				5C334EE01DBCE5B8000C6B8B /* EIPoint.m in Sources */,
-				5C334EE71DBD009D000C6B8B /* EIBusinessDataStorage.m in Sources */,
 				5C334EBD1DBBF802000C6B8B /* EIStationItem.m in Sources */,
 				3F330CF4F8B53DE31E595D73 /* StationsListModuleViewController.m in Sources */,
 				58C51912F85E3B37A5865A98 /* StationsListModulePresenter.m in Sources */,
@@ -747,6 +773,7 @@
 				5C334EB71DBBF510000C6B8B /* EIStationsDisplayData.m in Sources */,
 				0212DCCACD2BFA809E66BA0F /* TripSettingModuleAssembly.m in Sources */,
 				29701B3CA33BCB5B427642CD /* TripSettingModuleViewController.m in Sources */,
+				5C714B011DBEA10A00C85060 /* TripSettingPresenterStateStorage.m in Sources */,
 				7665CA34A8EF8F2FD1B3326E /* TripSettingModulePresenter.m in Sources */,
 				4B7EB5D53844C9ABA955A6C6 /* TripSettingModuleInteractor.m in Sources */,
 				B51CE88EA72C7BDC3A9B49C3 /* TripSettingModuleRouter.m in Sources */,
@@ -754,6 +781,7 @@
 				F84F4EB8E16C8D26A6C686D3 /* StationDetailInfoModuleViewController.m in Sources */,
 				2AC59C12590003FB8735AC06 /* StationDetailInfoModulePresenter.m in Sources */,
 				09086D8CF7184C15BA058641 /* StationDetailInfoModuleInteractor.m in Sources */,
+				5C9CF5711DBE62DC006799D6 /* EITripItem.m in Sources */,
 				37DC19D6F7030A05DE20C35A /* StationDetailInfoModuleRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

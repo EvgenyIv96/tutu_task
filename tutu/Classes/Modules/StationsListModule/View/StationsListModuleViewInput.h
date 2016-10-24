@@ -29,11 +29,10 @@
 /**
  @author Evgeny Ivanov
  
- Method is used to change highlighted cell
+ Method is used to close current module
  @param
  */
-- (void)changeSelectedCellAtIndexPath:(NSIndexPath *)oldCellPath toCellAtIndexPath:(NSIndexPath *)newCellPath;
-
+- (void)closeStationListModule;
 
 
 @end

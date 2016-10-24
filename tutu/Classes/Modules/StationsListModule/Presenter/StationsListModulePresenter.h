@@ -9,6 +9,7 @@
 #import "StationsListModuleViewOutput.h"
 #import "StationsListModuleInteractorOutput.h"
 #import "StationsListModuleModuleInput.h"
+#import "StationsListModuleModuleOutput.h"
 #import "EIStationsListPresenterStateStorage.h"
 
 @protocol StationsListModuleViewInput;
@@ -21,6 +22,6 @@
 @property (nonatomic, strong) id<StationsListModuleInteractorInput> interactor;
 @property (nonatomic, strong) id<StationsListModuleRouterInput> router;
 @property (nonatomic, strong) EIStationsListPresenterStateStorage *presenterStateStorage;
-
+@property (nonatomic, strong) id<StationsListModuleModuleOutput> moduleOutput;
 
 @end

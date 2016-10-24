@@ -12,6 +12,7 @@
 #import "TripSettingModuleInteractor.h"
 #import "TripSettingModulePresenter.h"
 #import "TripSettingModuleRouter.h"
+#import "TripSettingPresenterStateStorage.h"
 
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
@@ -44,6 +45,9 @@
                                                     with:[self interactorTripSettingModuleModule]];
                               [definition injectProperty:@selector(router)
                                                     with:[self routerTripSettingModuleModule]];
+                              [definition injectProperty:@selector(stateStorage)
+                                                    with:[self presenterStateStorageTripSettingModule]];
+                              
                           }];
 }
 
@@ -53,6 +57,12 @@
                               [definition injectProperty:@selector(transitionHandler)
                                                     with:[self viewTripSettingModuleModule]];
                           }];
+}
+
+- (TripSettingPresenterStateStorage *)presenterStateStorageTripSettingModule {
+    
+    return [TyphoonDefinition withClass:[TripSettingPresenterStateStorage class]];
+    
 }
 
 @end

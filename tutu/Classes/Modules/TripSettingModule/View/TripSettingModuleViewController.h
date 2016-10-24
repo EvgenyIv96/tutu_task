@@ -12,7 +12,7 @@
 
 @protocol TripSettingModuleViewOutput;
 
-@interface TripSettingModuleViewController : UIViewController <TripSettingModuleViewInput>
+@interface TripSettingModuleViewController : UIViewController <TripSettingModuleViewInput, UITextFieldDelegate>
 
 @property (nonatomic, strong) id<TripSettingModuleViewOutput> output;
 

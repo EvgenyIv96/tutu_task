@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Trip Setting Module View Controller-->
+        <scene sceneID="K0i-8o-jzR">
+            <objects>
+                <viewController storyboardIdentifier="TripSettingModuleViewController" id="gnS-dM-eja" customClass="TripSettingModuleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aMx-is-mNY"/>
+                        <viewControllerLayoutGuide type="bottom" id="X7c-xw-t7t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HbP-IE-aKW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ehq-pt-Lge">
+                                <rect key="frame" x="60" y="280" width="480" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пункт отправления" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="CUJ-re-oPc">
+                                        <rect key="frame" x="8" y="5" width="222" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="gnS-dM-eja" id="yS1-hJ-h2P"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пункт прибытия" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="aev-jV-dml">
+                                        <rect key="frame" x="250" y="5" width="222" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="gnS-dM-eja" id="l1u-V4-rb9"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="0.3999730603448276" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="aev-jV-dml" firstAttribute="centerY" secondItem="Ehq-pt-Lge" secondAttribute="centerY" id="7m4-Q2-GWx"/>
+                                    <constraint firstItem="aev-jV-dml" firstAttribute="leading" secondItem="CUJ-re-oPc" secondAttribute="trailing" constant="20" id="GGQ-lx-kUw"/>
+                                    <constraint firstAttribute="height" constant="40" id="KsY-4B-sZC"/>
+                                    <constraint firstItem="CUJ-re-oPc" firstAttribute="leading" secondItem="Ehq-pt-Lge" secondAttribute="leading" constant="8" id="Sxr-KU-HXZ"/>
+                                    <constraint firstItem="aev-jV-dml" firstAttribute="leading" secondItem="CUJ-re-oPc" secondAttribute="trailing" constant="8" symbolic="YES" id="V2v-cB-cVR"/>
+                                    <constraint firstItem="CUJ-re-oPc" firstAttribute="width" secondItem="aev-jV-dml" secondAttribute="width" id="fmK-8S-Yhl"/>
+                                    <constraint firstAttribute="trailing" secondItem="aev-jV-dml" secondAttribute="trailing" constant="8" id="kCl-NX-Pkj"/>
+                                    <constraint firstItem="CUJ-re-oPc" firstAttribute="centerY" secondItem="Ehq-pt-Lge" secondAttribute="centerY" id="ydU-qv-sWX"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="V2v-cB-cVR"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Дата поездки" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZwH-oL-joH">
+                                <rect key="frame" x="189" y="340" width="222" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gnS-dM-eja" id="9Px-v4-3yJ"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZwH-oL-joH" firstAttribute="width" secondItem="aev-jV-dml" secondAttribute="width" id="KuQ-we-C1K"/>
+                            <constraint firstItem="Ehq-pt-Lge" firstAttribute="centerY" secondItem="HbP-IE-aKW" secondAttribute="centerY" id="OcG-PX-I50"/>
+                            <constraint firstItem="ZwH-oL-joH" firstAttribute="centerX" secondItem="HbP-IE-aKW" secondAttribute="centerX" id="THh-TG-v2v"/>
+                            <constraint firstItem="Ehq-pt-Lge" firstAttribute="centerX" secondItem="HbP-IE-aKW" secondAttribute="centerX" id="Ybn-bS-Zre"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ehq-pt-Lge" secondAttribute="trailing" constant="8" id="aJw-T3-jHS"/>
+                            <constraint firstItem="Ehq-pt-Lge" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HbP-IE-aKW" secondAttribute="leading" constant="8" id="f3q-lb-D4S"/>
+                            <constraint firstItem="Ehq-pt-Lge" firstAttribute="centerY" secondItem="HbP-IE-aKW" secondAttribute="centerY" id="mSH-kK-ala"/>
+                            <constraint firstItem="ZwH-oL-joH" firstAttribute="top" secondItem="Ehq-pt-Lge" secondAttribute="bottom" constant="20" id="tnf-tV-HfS"/>
+                            <constraint firstItem="Ehq-pt-Lge" firstAttribute="width" secondItem="HbP-IE-aKW" secondAttribute="width" multiplier="0.8" id="wgf-qX-lCN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateField" destination="ZwH-oL-joH" id="uxB-a0-EGe"/>
+                        <outlet property="fromStationField" destination="CUJ-re-oPc" id="SNS-Zs-PUZ"/>
+                        <outlet property="toStationField" destination="aev-jV-dml" id="zBo-1u-McK"/>
+                        <segue destination="c4g-02-YcN" kind="presentation" identifier="kTripSettingModuleToStationListModuleSegue" id="nng-kK-w8n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGv-ag-GPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="326"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="96r-1C-tgx">
+            <objects>
+                <navigationController id="c4g-02-YcN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Aj8-If-QSw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Asp-RG-5nw" kind="relationship" relationship="rootViewController" id="3qp-9C-06M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tta-SV-GYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="-755"/>
+        </scene>
+        <!--StationsListModuleViewController-->
+        <scene sceneID="Ino-BM-W2v">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="StationsListModuleViewController" storyboardName="Stations" referencedIdentifier="StationsListModuleViewController" id="Asp-RG-5nw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="oJF-In-mRW"/>
+                    <navigationItem key="navigationItem" id="7u9-0g-Ud7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mk9-he-UQv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1455.5" y="-320"/>
+        </scene>
+    </scenes>
+</document>

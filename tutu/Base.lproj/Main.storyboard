@@ -24,17 +24,6 @@
             </objects>
             <point key="canvasLocation" x="177" y="240"/>
         </scene>
-        <!--StationsListModuleViewController-->
-        <scene sceneID="rkM-c9-zOT">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Stations" referencedIdentifier="StationsListModuleViewController" id="Pb2-Pf-Yaj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="fJ6-9a-FBw"/>
-                    <navigationItem key="navigationItem" id="xk6-nf-mYe"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bZK-Ua-Fk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="748.5" y="-505"/>
-        </scene>
         <!--Item-->
         <scene sceneID="g72-Hq-Hnl">
             <objects>
@@ -45,12 +34,22 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Pb2-Pf-Yaj" kind="relationship" relationship="rootViewController" id="99U-b2-7DH"/>
+                        <segue destination="r4d-CT-9m1" kind="relationship" relationship="rootViewController" id="4Ae-EZ-gfH"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9hj-Qv-DEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="141" y="-515"/>
+        </scene>
+        <!--TripSettingModuleViewController-->
+        <scene sceneID="vXw-fw-euu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TripSettings" referencedIdentifier="TripSettingModuleViewController" id="r4d-CT-9m1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OSA-RH-f4t"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="490-Dm-5gG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671.5" y="-516"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="JbC-dh-UpZ">

@@ -19,4 +19,6 @@
  Метод инициирует стартовую конфигурацию текущего модуля
  */
 - (void)configureModuleWithSelectedStation:(EIStation *)selectedStation forCitiesKey:(NSString *)citiesKey;
+
+
 @end

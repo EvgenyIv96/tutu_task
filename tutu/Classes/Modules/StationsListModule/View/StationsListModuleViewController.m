@@ -54,6 +54,10 @@ static NSString *const kStationCellReuseIdentifier = @"EIStationCellReuseIdentif
     
     [self.tableView setContentOffset:CGPointMake(0,self.searchController.searchBar.frame.size.height)];
     
+    UIBarButtonItem *closeButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(didTapCloseButton:)];
+    
+    [self.navigationItem setRightBarButtonItem:closeButtonItem];
+    
 }
 
 - (void)updateTableViewWithData:(EIStationsDisplayData *)data {
@@ -63,13 +67,9 @@ static NSString *const kStationCellReuseIdentifier = @"EIStationCellReuseIdentif
     [self.tableView reloadData];
 }
 
-- (void)changeSelectedCellAtIndexPath:(NSIndexPath *)oldCellPath toCellAtIndexPath:(NSIndexPath *)newCellPath {
+- (void)closeStationListModule {
     
-    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:oldCellPath];
-    cell.accessoryType = UITableViewCellAccessoryNone;
-    
-    cell = [self.tableView cellForRowAtIndexPath:newCellPath];
-    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 
@@ -121,7 +121,11 @@ static NSString *const kStationCellReuseIdentifier = @"EIStationCellReuseIdentif
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    EIStationsSection *section = self.data.sectionsArray[indexPath.section];
     
+    EIStationItem *item = section.stationsArray[indexPath.row];
+    
+    [self.output didChangeSelectedStationToStation:item inSection:section];
     
 }
 
@@ -148,6 +152,12 @@ static NSString *const kStationCellReuseIdentifier = @"EIStationCellReuseIdentif
     NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
     
     [self.output showDetailInfoForStationInSection:indexPath.section forIndex:indexPath.row];
+    
+}
+
+- (void)didTapCloseButton:(id)sender {
+    
+    [self.output didTapCloseButton];
     
 }
 
