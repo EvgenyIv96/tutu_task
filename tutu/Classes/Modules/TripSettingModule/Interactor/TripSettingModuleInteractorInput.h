@@ -12,4 +12,11 @@
 
 @protocol TripSettingModuleInteractorInput <NSObject>
 
+/**
+ @author Evgeny Ivanov
+ 
+ Method is used to load background animation
+ */
+- (NSData *)loadBackgroundData;
+
 @end

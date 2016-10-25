@@ -40,8 +40,21 @@
 
 #pragma mark - Методы TripSettingModuleViewInput
 
-- (void)setupInitialState {
+- (void)setupInitialStateWithBackgroundData:(NSData *)data {
 	// В этом методе происходит настройка параметров view, зависящих от ее жизненого цикла (создание элементов, анимации и пр.)
+    
+    UIWebView *webViewBG = [[UIWebView alloc] initWithFrame:self.view.frame];
+    [webViewBG loadData:data MIMEType:@"image/gif" textEncodingName:nil baseURL:nil];
+    webViewBG.userInteractionEnabled = NO;
+    [self.view insertSubview:webViewBG atIndex:0];
+    
+    
+    UIView *filter = [[UIView alloc] initWithFrame:self.view.frame];
+    filter.backgroundColor = [UIColor blackColor];
+    filter.alpha = 0.05;
+//    [self.view addSubview:filter];
+    [self.view insertSubview:filter atIndex:1];
+    
 }
 
 - (void)configureViewWithTripItem:(EITripItem *)trip {

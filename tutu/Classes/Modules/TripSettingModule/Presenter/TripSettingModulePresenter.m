@@ -30,7 +30,8 @@ static NSString *const dateFormat = @"dd.MM.yyyy";
 #pragma mark - Методы TripSettingModuleViewOutput
 
 - (void)didTriggerViewReadyEvent {
-	[self.view setupInitialState];
+    
+    [self.view setupInitialStateWithBackgroundData:[self.interactor loadBackgroundData]];;
 }
 
 - (void)setupView {

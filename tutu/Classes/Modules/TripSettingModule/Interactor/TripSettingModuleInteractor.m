@@ -14,5 +14,14 @@
 
 #pragma mark - Методы TripSettingModuleInteractorInput
 
+- (NSData *)loadBackgroundData {
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"railway" ofType:@"gif"];
+    
+    NSData *backgroundData = [NSData dataWithContentsOfFile:filePath];
+    
+    return backgroundData;
+    
+}
 
 @end

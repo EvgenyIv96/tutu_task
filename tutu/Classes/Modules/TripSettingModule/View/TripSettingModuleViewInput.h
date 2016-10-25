@@ -16,8 +16,9 @@
  @author EI
 
  Метод настраивает начальный стейт view
+ @param data NSData data with gif file
  */
-- (void)setupInitialState;
+- (void)setupInitialStateWithBackgroundData:(NSData *)data;
 
 /**
  @author Evgeny Ivanov

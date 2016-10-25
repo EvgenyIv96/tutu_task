@@ -46,6 +46,7 @@
 		5C9CF5711DBE62DC006799D6 /* EITripItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9CF5701DBE62DC006799D6 /* EITripItem.m */; };
 		5CE9705C1DBF461400838F00 /* DatePick.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE9705B1DBF461400838F00 /* DatePick.storyboard */; };
 		5CE970601DBF491200838F00 /* EIDatePickPresenterStateStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE9705F1DBF491200838F00 /* EIDatePickPresenterStateStorage.m */; };
+		5CE970641DBF6ADA00838F00 /* railway.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5CE970631DBF6ADA00838F00 /* railway.gif */; };
 		5F414D747C7DC6874A8E39EB /* DatePickModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1161851292CA3DA6AF096DA /* DatePickModuleViewController.m */; };
 		6E8D12327C3CB7EDBC53F949 /* DatePickModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = F85CB7434D3CB02A5B9C794B /* DatePickModuleAssembly.m */; };
 		7665CA34A8EF8F2FD1B3326E /* TripSettingModulePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B7132392DF26CF6E404A8EB6 /* TripSettingModulePresenter.m */; };
@@ -136,6 +137,7 @@
 		5CE9705E1DBF491200838F00 /* EIDatePickPresenterStateStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIDatePickPresenterStateStorage.h; sourceTree = "<group>"; };
 		5CE9705F1DBF491200838F00 /* EIDatePickPresenterStateStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EIDatePickPresenterStateStorage.m; sourceTree = "<group>"; };
 		5CE970611DBF4C7E00838F00 /* DatePickModuleModuleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickModuleModuleOutput.h; sourceTree = "<group>"; };
+		5CE970631DBF6ADA00838F00 /* railway.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = railway.gif; sourceTree = "<group>"; };
 		5E9CE7DEB112E5674D61E565 /* StationsListModuleInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleInteractorOutput.h; sourceTree = "<group>"; };
 		60730E3BD51FD143AEF27615 /* TripSettingModuleViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleViewOutput.h; sourceTree = "<group>"; };
 		635F56E52F7AD07B0A75F316 /* StationsListModuleInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationsListModuleInteractor.m; sourceTree = "<group>"; };
@@ -494,6 +496,7 @@
 		5C334EE81DBD05F9000C6B8B /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				5CE970621DBF6ADA00838F00 /* Background animation */,
 				5C334EE91DBD05FA000C6B8B /* Data */,
 			);
 			path = Resourses;
@@ -583,6 +586,14 @@
 				5CE9705F1DBF491200838F00 /* EIDatePickPresenterStateStorage.m */,
 			);
 			path = PresenterStateStorage;
+			sourceTree = "<group>";
+		};
+		5CE970621DBF6ADA00838F00 /* Background animation */ = {
+			isa = PBXGroup;
+			children = (
+				5CE970631DBF6ADA00838F00 /* railway.gif */,
+			);
+			path = "Background animation";
 			sourceTree = "<group>";
 		};
 		5D1A5C90C4CF14BF789FC532 /* Assembly */ = {
@@ -794,6 +805,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CE970641DBF6ADA00838F00 /* railway.gif in Resources */,
 				5C334EF51DBD2151000C6B8B /* DetailInfo.storyboard in Resources */,
 				5C334EEB1DBD05FA000C6B8B /* allStations.json in Resources */,
 				5C334EC21DBBFC79000C6B8B /* Stations.storyboard in Resources */,
