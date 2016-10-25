@@ -17,6 +17,7 @@
  @author Evgeny Ivanov
  
  Method is used to inform presenter that selected station was changed
+ @param station EIStation station object
  */
 - (void)didChangeSelectedStationTo:(EIStation *)station;
 

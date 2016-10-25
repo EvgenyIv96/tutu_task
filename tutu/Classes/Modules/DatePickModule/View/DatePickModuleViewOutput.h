@@ -32,6 +32,12 @@
  */
 - (void)didChangeSelectedDate:(NSDate *)date;
 
+
+/**
+ @author Evgeny Ivanov
+
+ Method is used to configure view
+ */
 - (void)configureView;
 
 @end

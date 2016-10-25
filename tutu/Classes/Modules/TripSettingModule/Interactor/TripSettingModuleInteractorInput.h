@@ -16,6 +16,7 @@
  @author Evgeny Ivanov
  
  Method is used to load background animation
+ @return NSData data with gif animation
  */
 - (NSData *)loadBackgroundData;
 

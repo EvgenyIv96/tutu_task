@@ -12,7 +12,7 @@
 /**
  @author EI
 
- StationDetailInfoModule module
+ StationDetailInfoModule module, which shows detail info for station
  */
 @interface StationDetailInfoModuleAssembly : TyphoonAssembly <RamblerInitialAssembly>
 

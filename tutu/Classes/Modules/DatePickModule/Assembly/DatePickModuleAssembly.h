@@ -12,7 +12,7 @@
 /**
  @author EI
 
- DatePickModule module
+ DatePickModule module, which used to pick date
  */
 @interface DatePickModuleAssembly : TyphoonAssembly <RamblerInitialAssembly>
 

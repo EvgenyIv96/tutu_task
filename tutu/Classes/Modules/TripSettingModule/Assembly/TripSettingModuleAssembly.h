@@ -12,7 +12,7 @@
 /**
  @author EI
 
- TripSettingModule module
+ TripSettingModule module, which shows trip options
  */
 @interface TripSettingModuleAssembly : TyphoonAssembly <RamblerInitialAssembly>
 

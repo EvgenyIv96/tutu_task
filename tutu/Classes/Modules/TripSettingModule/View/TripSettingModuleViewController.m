@@ -36,6 +36,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
+    
 }
 
 #pragma mark - Методы TripSettingModuleViewInput
@@ -52,8 +53,9 @@
     UIView *filter = [[UIView alloc] initWithFrame:self.view.frame];
     filter.backgroundColor = [UIColor blackColor];
     filter.alpha = 0.05;
-//    [self.view addSubview:filter];
     [self.view insertSubview:filter atIndex:1];
+    
+    [self.navigationItem setTitle:@"Поездка"];
     
 }
 
@@ -106,7 +108,5 @@
     return NO;
     
 }
-
-
 
 @end

@@ -23,6 +23,7 @@
  @author Evgeny Ivanov
  
  Method is used to update table
+ @param data EIStationsDisplayData display data with sections with stations
  */
 - (void)updateTableViewWithData:(EIStationsDisplayData *)data;
 
@@ -30,7 +31,6 @@
  @author Evgeny Ivanov
  
  Method is used to close current module
- @param
  */
 - (void)closeStationListModule;
 

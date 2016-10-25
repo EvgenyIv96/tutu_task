@@ -16,7 +16,21 @@
                     <view key="view" contentMode="scaleToFill" id="O14-wg-wVZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Тестовое задание туту.ру  Evgeny Ivanov  v. = 0.1a" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rwt-bg-qcS">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rwt-bg-qcS" firstAttribute="leading" secondItem="O14-wg-wVZ" secondAttribute="leading" id="Gl3-YT-cBs"/>
+                            <constraint firstAttribute="trailing" secondItem="rwt-bg-qcS" secondAttribute="trailing" id="Ugi-Hn-djm"/>
+                            <constraint firstItem="I3F-ZK-aPQ" firstAttribute="top" secondItem="rwt-bg-qcS" secondAttribute="bottom" id="XqU-Nr-YAb"/>
+                            <constraint firstItem="rwt-bg-qcS" firstAttribute="top" secondItem="NjM-u0-wh1" secondAttribute="bottom" id="app-rE-wAx"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="О приложении" image="Tab bar info" selectedImage="Tab bar info fill" id="fsv-Kl-8ft"/>
                 </viewController>
