@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--О приложении-->
         <scene sceneID="o77-vb-znM">
             <objects>
                 <viewController id="JZ1-zT-fZx" sceneMemberID="viewController">
@@ -18,17 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="fsv-Kl-8ft"/>
+                    <tabBarItem key="tabBarItem" title="О приложении" image="Tab bar info" selectedImage="Tab bar info fill" id="fsv-Kl-8ft"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hzz-pu-ebs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="177" y="240"/>
         </scene>
-        <!--Item-->
+        <!--Конфигуратор поездки-->
         <scene sceneID="g72-Hq-Hnl">
             <objects>
                 <navigationController id="Myn-uE-o15" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="sjJ-yZ-iVe"/>
+                    <tabBarItem key="tabBarItem" title="Конфигуратор поездки" image="Tab bar train" selectedImage="Tab bar train fill" id="sjJ-yZ-iVe"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q8N-mu-9b7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -61,8 +61,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="JZ1-zT-fZx" kind="relationship" relationship="viewControllers" id="K4M-E7-eAI"/>
                         <segue destination="Myn-uE-o15" kind="relationship" relationship="viewControllers" id="uCj-n9-psD"/>
+                        <segue destination="JZ1-zT-fZx" kind="relationship" relationship="viewControllers" id="K4M-E7-eAI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="enE-CS-7dE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -70,4 +70,10 @@
             <point key="canvasLocation" x="-643" y="-90"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Tab bar info" width="25" height="25"/>
+        <image name="Tab bar info fill" width="25" height="25"/>
+        <image name="Tab bar train" width="25" height="25"/>
+        <image name="Tab bar train fill" width="25" height="25"/>
+    </resources>
 </document>

@@ -69,6 +69,10 @@ static NSString *const kStationCellReuseIdentifier = @"EIStationCellReuseIdentif
 
 - (void)closeStationListModule {
     
+    if (self.searchController.active) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }

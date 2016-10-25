@@ -11,6 +11,7 @@
 		09086D8CF7184C15BA058641 /* StationDetailInfoModuleInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = FD77AFFCC89AA045260A4EE6 /* StationDetailInfoModuleInteractor.m */; };
 		29701B3CA33BCB5B427642CD /* TripSettingModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE48E0E21ABF5EE0BA8980B /* TripSettingModuleViewController.m */; };
 		2AC59C12590003FB8735AC06 /* StationDetailInfoModulePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D823FCA6855239B8F5BE03 /* StationDetailInfoModulePresenter.m */; };
+		353816726E6D238FC3C70905 /* DatePickModuleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 65284BCD95200221ED6925C5 /* DatePickModuleRouter.m */; };
 		37DC19D6F7030A05DE20C35A /* StationDetailInfoModuleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = F00E6B9A50A8AFE3592CC710 /* StationDetailInfoModuleRouter.m */; };
 		3F330CF4F8B53DE31E595D73 /* StationsListModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F71148D7D641D17D4BC4B9 /* StationsListModuleViewController.m */; };
 		4B7EB5D53844C9ABA955A6C6 /* TripSettingModuleInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC650FB0E5B6157BB921156 /* TripSettingModuleInteractor.m */; };
@@ -43,19 +44,31 @@
 		5C334F031DBD5057000C6B8B /* TripSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C334F021DBD5057000C6B8B /* TripSettings.storyboard */; };
 		5C714B011DBEA10A00C85060 /* TripSettingPresenterStateStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C714B001DBEA10A00C85060 /* TripSettingPresenterStateStorage.m */; };
 		5C9CF5711DBE62DC006799D6 /* EITripItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9CF5701DBE62DC006799D6 /* EITripItem.m */; };
+		5CE9705C1DBF461400838F00 /* DatePick.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE9705B1DBF461400838F00 /* DatePick.storyboard */; };
+		5CE970601DBF491200838F00 /* EIDatePickPresenterStateStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE9705F1DBF491200838F00 /* EIDatePickPresenterStateStorage.m */; };
+		5F414D747C7DC6874A8E39EB /* DatePickModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1161851292CA3DA6AF096DA /* DatePickModuleViewController.m */; };
+		6E8D12327C3CB7EDBC53F949 /* DatePickModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = F85CB7434D3CB02A5B9C794B /* DatePickModuleAssembly.m */; };
 		7665CA34A8EF8F2FD1B3326E /* TripSettingModulePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B7132392DF26CF6E404A8EB6 /* TripSettingModulePresenter.m */; };
+		77CE6C9DFCC3E5905CE71F68 /* DatePickModulePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E115396BE79841778BE83F70 /* DatePickModulePresenter.m */; };
 		789F0784EC5464E9E9179C45 /* StationDetailInfoModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 808614B495340FAB89093787 /* StationDetailInfoModuleAssembly.m */; };
 		9E23CAE2AE46885E22E1C532 /* StationsListModuleInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 635F56E52F7AD07B0A75F316 /* StationsListModuleInteractor.m */; };
 		B51CE88EA72C7BDC3A9B49C3 /* TripSettingModuleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F232F5206CEA8BF1E44D06 /* TripSettingModuleRouter.m */; };
 		C46D02D215C4EE1AB8CCB9A3 /* StationsListModuleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA45F713AEFEF111A45B1E8 /* StationsListModuleRouter.m */; };
+		C4C4F963614BC8C2F7E6AFBD /* DatePickModuleInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B4992C6EDC5651BE496D9F /* DatePickModuleInteractor.m */; };
 		F4ED42A80224F4AA6E44D375 /* libPods-tutu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA227E5284DBEFD9128F3CE /* libPods-tutu.a */; };
 		F84F4EB8E16C8D26A6C686D3 /* StationDetailInfoModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DF1FC462C895429342EAB3 /* StationDetailInfoModuleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		028237AEECD5E09792569AEB /* DatePickModuleRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DatePickModuleRouterInput.h; sourceTree = "<group>"; };
+		041E3B67865F3D9DFB0E21D3 /* DatePickModuleRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DatePickModuleRouter.h; sourceTree = "<group>"; };
 		04F71148D7D641D17D4BC4B9 /* StationsListModuleViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationsListModuleViewController.m; sourceTree = "<group>"; };
 		1093B58803108880FF368063 /* Pods-tutu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tutu.release.xcconfig"; path = "Pods/Target Support Files/Pods-tutu/Pods-tutu.release.xcconfig"; sourceTree = "<group>"; };
+		11FC117C0E603FDA5D034D03 /* DatePickModuleInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DatePickModuleInteractor.h; sourceTree = "<group>"; };
 		1949A19FF40D48CAD7E76962 /* StationsListModuleModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleModuleInput.h; sourceTree = "<group>"; };
+		1C38F10F8525A31F20B4E625 /* DatePickModuleInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DatePickModuleInteractorOutput.h; sourceTree = "<group>"; };
+		1C7F649C123D762D65394AF8 /* DatePickModuleAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DatePickModuleAssembly.h; sourceTree = "<group>"; };
+		2053B32963FD8FD6D6188A0A /* DatePickModuleViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DatePickModuleViewInput.h; sourceTree = "<group>"; };
 		20AD3D3DE2901B11A213C276 /* StationDetailInfoModuleViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationDetailInfoModuleViewOutput.h; sourceTree = "<group>"; };
 		24D823FCA6855239B8F5BE03 /* StationDetailInfoModulePresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationDetailInfoModulePresenter.m; sourceTree = "<group>"; };
 		27F232F5206CEA8BF1E44D06 /* TripSettingModuleRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TripSettingModuleRouter.m; sourceTree = "<group>"; };
@@ -63,11 +76,13 @@
 		2D88282CB40803B96EFFB475 /* StationsListModuleRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleRouterInput.h; sourceTree = "<group>"; };
 		37F8FED4456D2CB6E53B91B3 /* StationDetailInfoModuleAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationDetailInfoModuleAssembly.h; sourceTree = "<group>"; };
 		38D1D87286A98437C94B874A /* TripSettingModuleRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleRouterInput.h; sourceTree = "<group>"; };
+		3E12FC3B8BECDFE0CF987D9D /* DatePickModuleViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DatePickModuleViewOutput.h; sourceTree = "<group>"; };
 		4454598FB9EFB97419BF3161 /* TripSettingModuleInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleInteractorInput.h; sourceTree = "<group>"; };
 		47DF1FC462C895429342EAB3 /* StationDetailInfoModuleViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationDetailInfoModuleViewController.m; sourceTree = "<group>"; };
 		4F9E85681806062481E29B25 /* StationDetailInfoModuleViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationDetailInfoModuleViewController.h; sourceTree = "<group>"; };
 		50103252A19F9F9A86997FEF /* Pods-tutu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tutu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tutu/Pods-tutu.debug.xcconfig"; sourceTree = "<group>"; };
 		544984500D93DA105EEF12AD /* StationsListModuleViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleViewOutput.h; sourceTree = "<group>"; };
+		5AF5AC02B3B571260B5FC0F6 /* DatePickModulePresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DatePickModulePresenter.h; sourceTree = "<group>"; };
 		5BC650FB0E5B6157BB921156 /* TripSettingModuleInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TripSettingModuleInteractor.m; sourceTree = "<group>"; };
 		5C334E8E1DBBE8B4000C6B8B /* tutu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tutu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C334E921DBBE8B4000C6B8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -117,9 +132,14 @@
 		5C714B001DBEA10A00C85060 /* TripSettingPresenterStateStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripSettingPresenterStateStorage.m; sourceTree = "<group>"; };
 		5C9CF56F1DBE62DC006799D6 /* EITripItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EITripItem.h; sourceTree = "<group>"; };
 		5C9CF5701DBE62DC006799D6 /* EITripItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EITripItem.m; sourceTree = "<group>"; };
+		5CE9705B1DBF461400838F00 /* DatePick.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DatePick.storyboard; sourceTree = "<group>"; };
+		5CE9705E1DBF491200838F00 /* EIDatePickPresenterStateStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIDatePickPresenterStateStorage.h; sourceTree = "<group>"; };
+		5CE9705F1DBF491200838F00 /* EIDatePickPresenterStateStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EIDatePickPresenterStateStorage.m; sourceTree = "<group>"; };
+		5CE970611DBF4C7E00838F00 /* DatePickModuleModuleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickModuleModuleOutput.h; sourceTree = "<group>"; };
 		5E9CE7DEB112E5674D61E565 /* StationsListModuleInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleInteractorOutput.h; sourceTree = "<group>"; };
 		60730E3BD51FD143AEF27615 /* TripSettingModuleViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleViewOutput.h; sourceTree = "<group>"; };
 		635F56E52F7AD07B0A75F316 /* StationsListModuleInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationsListModuleInteractor.m; sourceTree = "<group>"; };
+		65284BCD95200221ED6925C5 /* DatePickModuleRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DatePickModuleRouter.m; sourceTree = "<group>"; };
 		66A251214C6135D3A2119C50 /* StationsListModuleInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleInteractorInput.h; sourceTree = "<group>"; };
 		68D8263EAA43CA49927C2348 /* StationsListModuleInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleInteractor.h; sourceTree = "<group>"; };
 		6B383707B3022AE624B1DBD9 /* StationDetailInfoModulePresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationDetailInfoModulePresenter.h; sourceTree = "<group>"; };
@@ -140,17 +160,24 @@
 		A058BFD585B2B1F8B5CB27D1 /* TripSettingModuleAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleAssembly.h; sourceTree = "<group>"; };
 		A30527114C547E25B54DA863 /* StationDetailInfoModuleInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationDetailInfoModuleInteractor.h; sourceTree = "<group>"; };
 		A8AB19CF2B9F8A13032D66E5 /* StationsListModuleViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleViewController.h; sourceTree = "<group>"; };
+		B060A446210EED65E52F35CD /* DatePickModuleModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DatePickModuleModuleInput.h; sourceTree = "<group>"; };
+		B3B4992C6EDC5651BE496D9F /* DatePickModuleInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DatePickModuleInteractor.m; sourceTree = "<group>"; };
 		B3C5F56463A9F3E8838A410B /* StationDetailInfoModuleInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationDetailInfoModuleInteractorOutput.h; sourceTree = "<group>"; };
 		B49AC83AA12726A9C72644D1 /* StationsListModuleRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleRouter.h; sourceTree = "<group>"; };
 		B7132392DF26CF6E404A8EB6 /* TripSettingModulePresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TripSettingModulePresenter.m; sourceTree = "<group>"; };
 		C4DAC4E36051A794DF5B50F9 /* StationsListModuleAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StationsListModuleAssembly.h; sourceTree = "<group>"; };
+		CA9E7BBF9CF20A276F992EDF /* DatePickModuleInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DatePickModuleInteractorInput.h; sourceTree = "<group>"; };
+		CE0C5720AB412579A087EF64 /* DatePickModuleViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DatePickModuleViewController.h; sourceTree = "<group>"; };
 		D3A2F5A33F9C350DB4E7E8B5 /* TripSettingModuleModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleModuleInput.h; sourceTree = "<group>"; };
 		D6CA64114F426A3ADC118ABE /* TripSettingModuleInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleInteractorOutput.h; sourceTree = "<group>"; };
 		DDE48E0E21ABF5EE0BA8980B /* TripSettingModuleViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TripSettingModuleViewController.m; sourceTree = "<group>"; };
+		E115396BE79841778BE83F70 /* DatePickModulePresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DatePickModulePresenter.m; sourceTree = "<group>"; };
 		E26310D8817245041CB5DDE4 /* StationsListModulePresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationsListModulePresenter.m; sourceTree = "<group>"; };
 		E9A037812C51CF8F19DD1A7B /* TripSettingModuleViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleViewController.h; sourceTree = "<group>"; };
 		EDE88492D7732A760FDA6FED /* TripSettingModuleRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TripSettingModuleRouter.h; sourceTree = "<group>"; };
 		F00E6B9A50A8AFE3592CC710 /* StationDetailInfoModuleRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationDetailInfoModuleRouter.m; sourceTree = "<group>"; };
+		F1161851292CA3DA6AF096DA /* DatePickModuleViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DatePickModuleViewController.m; sourceTree = "<group>"; };
+		F85CB7434D3CB02A5B9C794B /* DatePickModuleAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DatePickModuleAssembly.m; sourceTree = "<group>"; };
 		FD77AFFCC89AA045260A4EE6 /* StationDetailInfoModuleInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StationDetailInfoModuleInteractor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +219,17 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		101E5A3DD875F2F9C36843FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2053B32963FD8FD6D6188A0A /* DatePickModuleViewInput.h */,
+				3E12FC3B8BECDFE0CF987D9D /* DatePickModuleViewOutput.h */,
+				CE0C5720AB412579A087EF64 /* DatePickModuleViewController.h */,
+				F1161851292CA3DA6AF096DA /* DatePickModuleViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		17E665E8FF70C12C3D6F9CD5 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +253,15 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		39E068B1BDA2CD3F845E71BD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1C7F649C123D762D65394AF8 /* DatePickModuleAssembly.h */,
+				F85CB7434D3CB02A5B9C794B /* DatePickModuleAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		3C80F4F2888FE1FADF510228 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +279,16 @@
 				7B860D56470F4CC9EE1936EF /* Modules */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		4956F2054B90A2AA721D43FA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				028237AEECD5E09792569AEB /* DatePickModuleRouterInput.h */,
+				041E3B67865F3D9DFB0E21D3 /* DatePickModuleRouter.h */,
+				65284BCD95200221ED6925C5 /* DatePickModuleRouter.m */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		4B2BC30BEFB39AB23F803CA4 /* Assembly */ = {
@@ -276,6 +333,19 @@
 				17E665E8FF70C12C3D6F9CD5 /* Router */,
 			);
 			path = TripSettingModule;
+			sourceTree = "<group>";
+		};
+		586F834917F106E251538727 /* DatePickModule */ = {
+			isa = PBXGroup;
+			children = (
+				5CE9705A1DBF45FD00838F00 /* Storyboard */,
+				39E068B1BDA2CD3F845E71BD /* Assembly */,
+				101E5A3DD875F2F9C36843FE /* View */,
+				F580709C7819830DFF490F4C /* Presenter */,
+				FBDDFC8CCA760B1145BFF8C3 /* Interactor */,
+				4956F2054B90A2AA721D43FA /* Router */,
+			);
+			path = DatePickModule;
 			sourceTree = "<group>";
 		};
 		5C334E851DBBE8B4000C6B8B = {
@@ -498,6 +568,23 @@
 			path = DisplayData;
 			sourceTree = "<group>";
 		};
+		5CE9705A1DBF45FD00838F00 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5CE9705B1DBF461400838F00 /* DatePick.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5CE9705D1DBF48F300838F00 /* PresenterStateStorage */ = {
+			isa = PBXGroup;
+			children = (
+				5CE9705E1DBF491200838F00 /* EIDatePickPresenterStateStorage.h */,
+				5CE9705F1DBF491200838F00 /* EIDatePickPresenterStateStorage.m */,
+			);
+			path = PresenterStateStorage;
+			sourceTree = "<group>";
+		};
 		5D1A5C90C4CF14BF789FC532 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
@@ -557,6 +644,7 @@
 				4C6333D88769E3414ED9F178 /* StationsListModule */,
 				5470A44CCD8DCDBA56E39D76 /* TripSettingModule */,
 				0733564931B1AD0DA4E18E78 /* StationDetailInfoModule */,
+				586F834917F106E251538727 /* DatePickModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -621,6 +709,29 @@
 				B7132392DF26CF6E404A8EB6 /* TripSettingModulePresenter.m */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F580709C7819830DFF490F4C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5CE9705D1DBF48F300838F00 /* PresenterStateStorage */,
+				B060A446210EED65E52F35CD /* DatePickModuleModuleInput.h */,
+				5AF5AC02B3B571260B5FC0F6 /* DatePickModulePresenter.h */,
+				E115396BE79841778BE83F70 /* DatePickModulePresenter.m */,
+				5CE970611DBF4C7E00838F00 /* DatePickModuleModuleOutput.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FBDDFC8CCA760B1145BFF8C3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CA9E7BBF9CF20A276F992EDF /* DatePickModuleInteractorInput.h */,
+				1C38F10F8525A31F20B4E625 /* DatePickModuleInteractorOutput.h */,
+				11FC117C0E603FDA5D034D03 /* DatePickModuleInteractor.h */,
+				B3B4992C6EDC5651BE496D9F /* DatePickModuleInteractor.m */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -689,6 +800,7 @@
 				5C334EA11DBBE8B4000C6B8B /* LaunchScreen.storyboard in Resources */,
 				5C334E9E1DBBE8B4000C6B8B /* Assets.xcassets in Resources */,
 				5C334EB31DBBED72000C6B8B /* EIStationCell.xib in Resources */,
+				5CE9705C1DBF461400838F00 /* DatePick.storyboard in Resources */,
 				5C334F031DBD5057000C6B8B /* TripSettings.storyboard in Resources */,
 				5C334E9C1DBBE8B4000C6B8B /* Main.storyboard in Resources */,
 			);
@@ -764,6 +876,7 @@
 				5C334EF21DBD1DE2000C6B8B /* UIView+UITableViewCell.m in Sources */,
 				5C334EE01DBCE5B8000C6B8B /* EIPoint.m in Sources */,
 				5C334EBD1DBBF802000C6B8B /* EIStationItem.m in Sources */,
+				5CE970601DBF491200838F00 /* EIDatePickPresenterStateStorage.m in Sources */,
 				3F330CF4F8B53DE31E595D73 /* StationsListModuleViewController.m in Sources */,
 				58C51912F85E3B37A5865A98 /* StationsListModulePresenter.m in Sources */,
 				5C334EAC1DBBEC51000C6B8B /* EITabBarController.m in Sources */,
@@ -783,6 +896,11 @@
 				09086D8CF7184C15BA058641 /* StationDetailInfoModuleInteractor.m in Sources */,
 				5C9CF5711DBE62DC006799D6 /* EITripItem.m in Sources */,
 				37DC19D6F7030A05DE20C35A /* StationDetailInfoModuleRouter.m in Sources */,
+				6E8D12327C3CB7EDBC53F949 /* DatePickModuleAssembly.m in Sources */,
+				5F414D747C7DC6874A8E39EB /* DatePickModuleViewController.m in Sources */,
+				77CE6C9DFCC3E5905CE71F68 /* DatePickModulePresenter.m in Sources */,
+				C4C4F963614BC8C2F7E6AFBD /* DatePickModuleInteractor.m in Sources */,
+				353816726E6D238FC3C70905 /* DatePickModuleRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

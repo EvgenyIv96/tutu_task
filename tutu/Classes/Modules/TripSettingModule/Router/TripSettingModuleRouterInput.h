@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @protocol StationsListModuleModuleOutput;
+@protocol DatePickModuleModuleOutput;
 
 @protocol TripSettingModuleRouterInput <NSObject>
 
@@ -21,6 +22,14 @@
  */
 - (void)openStationListModuleWithCitiesKey:(NSString *)citiesKey moduleOutput:(id<StationsListModuleModuleOutput>)moduleOutput;
 
-
+/**
+ @author Evgeny Ivanov
+ 
+ Method is used to initiate transition to the DatePickModule
+ 
+ @param selectedDate NSDate date object
+ @param moduleOutput
+ */
+- (void)openDatePickModuleWithDate:(NSDate *)date moduleOutput:(id<DatePickModuleModuleOutput>)moduleOutput;
 
 @end

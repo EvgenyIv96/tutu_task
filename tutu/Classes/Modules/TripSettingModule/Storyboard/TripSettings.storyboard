@@ -82,11 +82,28 @@
                         <outlet property="fromStationField" destination="CUJ-re-oPc" id="SNS-Zs-PUZ"/>
                         <outlet property="toStationField" destination="aev-jV-dml" id="zBo-1u-McK"/>
                         <segue destination="c4g-02-YcN" kind="presentation" identifier="kTripSettingModuleToStationListModuleSegue" id="nng-kK-w8n"/>
+                        <segue destination="1yO-5S-igg" kind="presentation" identifier="kTripSettingModuleToDatePickModuleSegue" id="Sht-ya-rl4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGv-ag-GPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="318" y="326"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SMh-MQ-2jP">
+            <objects>
+                <navigationController id="1yO-5S-igg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yel-yW-J61">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Gco-yq-jBq" kind="relationship" relationship="rootViewController" id="tsV-p7-6Ab"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bt9-ru-f4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1220" y="420"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="96r-1C-tgx">
@@ -114,6 +131,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mk9-he-UQv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1455.5" y="-320"/>
+        </scene>
+        <!--DatePickModuleViewController-->
+        <scene sceneID="PhT-xW-Id7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DatePick" referencedIdentifier="DatePickModuleViewController" id="Gco-yq-jBq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Dav-t1-aLz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wtG-vl-ANJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1871" y="425"/>
         </scene>
     </scenes>
 </document>

@@ -17,6 +17,7 @@
 
 static NSString *const kCitiesFrom = @"citiesFrom";
 static NSString *const kCitiesTo = @"citiesTo";
+static NSString *const dateFormat = @"dd.MM.yyyy";
 
 @implementation TripSettingModulePresenter
 
@@ -54,7 +55,15 @@ static NSString *const kCitiesTo = @"citiesTo";
 }
 
 - (void)didTapDateSelection {
-#warning Do push date selection
+    
+    if ([self.stateStorage.item.dateString isEqualToString:@""]) {
+        [self.router openDatePickModuleWithDate:nil moduleOutput:self];
+    } else {
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:dateFormat];
+        NSDate *date = [formatter dateFromString:self.stateStorage.item.dateString];
+        [self.router openDatePickModuleWithDate:date moduleOutput:self];
+    }
 }
 
 - (void)didTapCleanFromStationSelection {
@@ -84,6 +93,19 @@ static NSString *const kCitiesTo = @"citiesTo";
         [self.view configureViewWithTripItem:self.stateStorage.item];
         
     }
+    
+}
+
+#pragma mark - DatePickModuleModuleOutput
+
+- (void)didChangeSelectedDate:(NSDate *)newDate {
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:dateFormat];
+    
+    self.stateStorage.item.dateString = [formatter stringFromDate:newDate];
+    
+    [self.view configureViewWithTripItem:self.stateStorage.item];
     
 }
 

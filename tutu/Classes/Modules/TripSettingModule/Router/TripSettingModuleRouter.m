@@ -12,8 +12,11 @@
 
 #import "StationsListModuleModuleInput.h"
 #import "StationsListModuleModuleOutput.h"
+#import "DatePickModuleModuleInput.h"
+#import "DatePickModuleModuleOutput.h"
 
 static NSString *const kTripSettingModuleToStationListModuleSegue = @"kTripSettingModuleToStationListModuleSegue";
+static NSString *const kTripSettingModuleToDatePickModuleSegue = @"kTripSettingModuleToDatePickModuleSegue";
 
 @implementation TripSettingModuleRouter
 
@@ -27,6 +30,19 @@ static NSString *const kTripSettingModuleToStationListModuleSegue = @"kTripSetti
         
         return moduleOutput;
     }];
+    
+}
+
+- (void)openDatePickModuleWithDate:(NSDate *)date moduleOutput:(id<DatePickModuleModuleOutput>)moduleOutput {
+    
+    [[self.transitionHandler openModuleUsingSegue:kTripSettingModuleToDatePickModuleSegue]
+     thenChainUsingBlock:^id<DatePickModuleModuleOutput>(id<DatePickModuleModuleInput> moduleInput) {
+         
+         [moduleInput configureModuleWithDate:date];
+         
+         return moduleOutput;
+         
+     }];
     
 }
 

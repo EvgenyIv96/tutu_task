@@ -11,12 +11,13 @@
 #import "TripSettingModuleModuleInput.h"
 #import "StationsListModuleModuleOutput.h"
 #import "TripSettingPresenterStateStorage.h"
+#import "DatePickModuleModuleOutput.h"
 
 @protocol TripSettingModuleViewInput;
 @protocol TripSettingModuleInteractorInput;
 @protocol TripSettingModuleRouterInput;
 
-@interface TripSettingModulePresenter : NSObject <TripSettingModuleModuleInput, TripSettingModuleViewOutput, TripSettingModuleInteractorOutput, StationsListModuleModuleOutput>
+@interface TripSettingModulePresenter : NSObject <TripSettingModuleModuleInput, TripSettingModuleViewOutput, TripSettingModuleInteractorOutput, StationsListModuleModuleOutput, DatePickModuleModuleOutput>
 
 @property (nonatomic, weak) id<TripSettingModuleViewInput> view;
 @property (nonatomic, strong) id<TripSettingModuleInteractorInput> interactor;
